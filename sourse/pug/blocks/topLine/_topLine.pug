@@ -1,0 +1,42 @@
+mixin topLine()
+	// start topLine
+	+b.topLine.section#topLine&attributes(attributes)
+		.container
+			.row.align-items-center
+				.col-auto.d-lg-none
+					+b.toggle-menu-mobile--js
+						span
+				.col
+					.row.align-items-center
+						.col 
+							+e.link(href="http://100pudov.in.ua/" target="_blank") Интернет-магазин
+						.col-auto
+							+soc
+				+e.col.col-auto
+				.col
+					.row.align-items-center
+						.col-auto
+							+e.tel(href="tel:0800501766")
+								+icon('phone')
+								| 0 800 501 766
+						.col
+							+searchBlock
+						.col-auto
+							+langBlock
+	// end topLine
+
+mixin searchBlock
+	+b.search&attributes(attributes)
+		form
+			+input('Поиск по товарам','search')
+			+e.btn(type="submit")
+				+icon('search')
+
+mixin langBlock
+	+b.langBlock&attributes(attributes)
+		+e.item.drop-accardion-js 
+			+e.activeLang RU
+				+icon('sort-down')
+		+e.itemsHidden.drop-accardion-toggle-js
+			+e.link(href="#") UA
+			+e.link(href="#") EN

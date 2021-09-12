@@ -1,0 +1,54 @@
+ 
+	  
+.soc{
+	@include roww(10px, m);
+	display: flex;
+	&__item{
+		text-decoration: none !important; 
+		vertical-align: middle;
+		@include mt;
+		display: grid;
+		place-items: center;
+		.icon {
+			color: #fff;
+			@include mt;
+		}
+		&:hover{
+		 	.icon-fb {
+				 color: #3b5998;
+			}
+			.icon-twitter {
+				color: #55acee;
+			}
+			.icon-youtube {
+				color: #dd4b39;
+			}
+			.icon-instagram {
+				color: #ff1e00;
+			}
+		}
+		
+	}
+	.icon{
+		font-size: rem(17);
+	}
+
+	.icon-instagram {
+		font-size: rem(19);
+	}
+	 
+
+}
+ 
+
+.counter{
+	counter-reset: num;
+	&__item {
+		position: relative; 
+		&::before {
+			content: counter(num);
+			counter-increment: num;
+		}
+	}
+}
+

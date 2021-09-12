@@ -1,0 +1,61 @@
+//- WP menu
+mixin mnu-r()
+	-
+		var nav= { 
+			"Новости":"#",
+			"Стопудовое питание":"#",
+			"Контакты":"#",
+			}
+	ul.menu.menu--right(itemscope itemtype="http://schema.org/SiteNavigationElement")
+		each linkPatch, linkName in nav
+			li.menu-item(itemprop="item" ): a(href= linkPatch itemprop="url")= linkName
+
+//- menu
+
+mixin mnu-l()
+	-
+		var nav= { 
+			"Где купить":"#",
+			"О ТМ “Сто Пудов”":"#",
+			}
+	ul.menu.menu--left(itemscope itemtype="http://schema.org/SiteNavigationElement")
+		li.menu-item.menu-item-has-children
+			a(href="#" itemprop="url") Каталог
+			.menu__wrap
+				.row 
+					.col
+						span.menu__head Продукция
+						ul.sub-menu
+							-
+								var subnav= { 
+									"Готовые смеси для выпечки":"#",
+									"Блюда удобного приготовления":"#",
+									"Правильное питание":"#",
+									"Крупы":"#" ,
+									"Бобовые":"#" ,
+									"Мука, крахмал, панировочные сухари":"#" ,
+									"Наборы для приготовления":"#" ,
+									"Продукты в офис и в дорогу":"#" ,
+									"Макаронные изделия":"#" ,
+									"Сахар, соль, сода":"#" ,
+									"Сухофрукты,орехи":"#" ,
+									"Кондитерское сырьё, халва, чай":"#" ,
+									"Молочные продукты":"#" ,
+									"Мясные консервы":"#" ,
+									"Растительное масло":"#" ,
+									"HoReCa":"#" ,
+
+									}
+							each sublinkPatch, sublinkName in subnav
+								li.menu-item(itemprop="item" ): a(href= sublinkPatch itemprop="url")= sublinkName
+					.col.menu__col
+						span.menu__head Линейки круп
+						ul.menu__rList 
+							li.menu__colorItem: a(href="#" itemprop="url" style="--item-color:#D6392B") Традиционная
+							li.menu__colorItem: a(href="#" itemprop="url" style="--item-color:#6E3EB0") Премиум
+							li.menu__colorItem: a(href="#" itemprop="url" style="--item-color:#11C8D1") Мини
+							li.menu__colorItem: a(href="#" itemprop="url" style="--item-color:#D6392B") Дачка
+							li.menu__colorItem: a(href="#" itemprop="url" style="--item-color:#98D400") Эконом
+
+		each linkPatch, linkName in nav
+			li.menu-item(itemprop="item" ): a(href= linkPatch itemprop="url")= linkName

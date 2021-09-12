@@ -1,0 +1,15 @@
+mixin headerBlock()
+	// start headerBlock
+	+b.headerBlock.section#headerBlock&attributes(attributes)
+		+e.slider--js.swiper
+			.swiper-wrapper
+				mixin slide(i)
+					.swiper-slide
+						a(href="#")
+							+pic(`banner-${i}.jpg`,'','')
+				+slide('1')
+				+slide('2')
+			.swiper-pagination
+			+arrow
+						
+	// end headerBlock

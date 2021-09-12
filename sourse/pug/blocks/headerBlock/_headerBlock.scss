@@ -1,0 +1,75 @@
+// start .headerBlock
+.headerBlock {
+	// margin-bottom: 1px;
+	// min-height: 100vh;
+	// min-height: calc(var(--vh, 1vh) * 100);
+	overflow: hidden;
+	--sPT: 0;
+	--sPB: 0;
+	position: relative;
+
+	h1 {
+		margin-bottom: 1px;
+	}
+
+	h2 {
+		margin-bottom: 1px;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+
+
+	@include media-breakpoint-up(xs) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xs) {}
+
+}// end.headerBlock
+
+.swiper-pagination {
+	@include a-cent(x);
+	bottom: 0;
+	z-index: 10;
+	
+	.swiper-pagination-bullet {
+		background: $secondary;
+		width: rem(12);
+		height: rem(12);
+		border: solid 1px $secondary;
+		&:nth-child(1) {
+		}
+		&:last-child {
+		}
+
+		&-active {
+			background: #fff;
+		}
+	} 
+
+}
+
+.swiper-button-hand  {
+	display: grid;
+	place-items: center;
+	background: rgba(255,255,255,.2);
+	border-color: transparent !important;
+	.icon {
+		font-size: rem(32);
+		color: #fff;
+	}
+
+	&:hover {
+		background: rgba(255,255,255,.4);
+	}
+	&-next {
+		border-radius: 100% 0 0 100%;
+	}
+	&-prev {
+		border-radius: 0 100% 100% 0;
+	}
+}

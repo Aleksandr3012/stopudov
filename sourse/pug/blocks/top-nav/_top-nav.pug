@@ -1,0 +1,25 @@
+mixin mob-mnu()
+	+b.menu-mobile--js.d-lg-none
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner
+			+mnu-l()
+			+mnu-r()
+	//  мобильное меню
+
+mixin top-nav() 
+	// start top-nav
+	+b.top-nav.block-with-lazy.d-none.d-lg-block
+	
+		.container
+			.row.align-items-center
+				.col
+					+mnu-l()
+				+e.col.col-auto 
+					+b.logo(href='/')
+						img.logo__img.logo__img--lg(src="img/logo.svg", alt="Логотип")
+						img.logo__img.logo__img--sm(src="img/logo-3.png", alt="Логотип")
+				.col
+					+mnu-r()
+					
+	// end top-nav
