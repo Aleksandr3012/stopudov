@@ -1,0 +1,36 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sNewItem/_sNewItem.pug
+include ../blocks/sProjects/_sProjects.pug
+include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sCatalog/_sCatalog.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= 'Продукты питания. Каталог продукции | Сто пудов™'
+	title= title
+block pagecontent 
+
+	+mob-mnu()
+	+header()
+		+topLine()
+		+top-nav()
+	+b.pageHead
+		.container 
+			+breadcrumb('Главная','Каталог')
+	+sCatalog()
+	//- +headerBlock()
+	//- +sNewItem()
+	//- +sProjects()
+	//- +sAbout()
+	+footer()
+      
+
+
+

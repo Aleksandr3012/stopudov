@@ -47,6 +47,9 @@
 	&-item-has-children {
 		position: relative;
 		a {
+			@include media-breakpoint-up(lg) {
+				text-align: left;
+			}
 			position: relative;
 			&::after {
 				content: '';
@@ -134,6 +137,16 @@
 		}
 	}
 	&--right {
+
+		@include media-breakpoint-up(lg) {
+			.menu-item {
+				&:last-child {
+					a {
+						text-align: right;
+					}
+				}
+			}
+		}
 
 		&::before {
 			position: absolute;

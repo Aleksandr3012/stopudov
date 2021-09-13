@@ -1,10 +1,15 @@
-$default-font: "roboto";
+$default-font: "Roboto";
+$mono: "RobotoSlab";
 // $file-form: ($file-formats: woff2 woff ttf);
 $addr: '../fonts/';
 $file-format: woff2;
 
 
 // If font from googlefont, next lines remove
+@include font-face ($mono, $addr + "RobotoSlab-Bold/RobotoSlab-Bold", 700, $file-formats: $file-format);
+@include font-face ($mono, $addr + "RobotoSlab-Light/RobotoSlab-Light", 300, $file-formats: $file-format);
+@include font-face ($mono, $addr + "RobotoSlab-Medium/RobotoSlab-Medium", 500, $file-formats: $file-format);
+@include font-face ($mono, $addr + "RobotoSlab-Regular/RobotoSlab-Regular", $file-formats: $file-format);
 
 @include font-face ($default-font, $addr + "Roboto-Light/Roboto-Light", 300, $file-formats: $file-format);
 @include font-face ($default-font, $addr + "Roboto-Regular/Roboto-Regular", $file-formats: $file-format);
