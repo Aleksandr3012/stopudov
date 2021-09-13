@@ -6,22 +6,28 @@ mixin topLine()
 				.col-auto.d-lg-none
 					+b.toggle-menu-mobile--js
 						span
-				.col
+				.col.col-sm-auto.d-lg-none
+					+e.logo(href="/")
+						img(src="img/logo2.png", alt="Логотип")
+
+				.col.d-none.d-lg-block
 					.row.align-items-center
-						.col 
+						.col-auto.col-lg 
 							+e.link(href="http://100pudov.in.ua/" target="_blank") Интернет-магазин
 						.col-auto
 							+soc
-				+e.col.col-auto
-				.col
+				+e.col.col-auto.d-none.d-lg-block
+				.col-auto.col-sm
 					.row.align-items-center
-						.col-auto
+						.col-auto.d-none.d-lg-block
 							+e.tel(href="tel:0800501766")
 								+icon('phone')
 								| 0 800 501 766
-						.col
+						.col.d-none.d-sm-block
 							+searchBlock
-						.col-auto
+						.col-auto.d-lg-none
+							+e.catalog(href="#") Каталог
+						.col-auto.d-none.d-lg-block
 							+langBlock
 	// end topLine
 

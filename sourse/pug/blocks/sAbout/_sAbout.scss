@@ -1,0 +1,21 @@
+// start .sAbout
+.sAbout {
+
+	--sPT: #{rem(20)};
+	--sPB: #{rem(40)};
+	@include media-breakpoint-up(md) {
+		--sPT: #{rem(115)};
+		--sPB: #{rem(80)};
+	}
+	// --sTPB: ;
+
+	&__bgImg {
+		margin-right: calc(-50vw + 67%);
+	}
+
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sAbout
+

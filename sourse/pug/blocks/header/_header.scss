@@ -1,7 +1,10 @@
 // start .header
 .header {
-	padding-bottom: var(--top-nav-height);
+	@include media-breakpoint-up(lg) {
+		padding-bottom: var(--top-nav-height);
+	}
 	position: relative;
+	z-index: 500;
 
 
 	@include media-breakpoint-up(xs) {}

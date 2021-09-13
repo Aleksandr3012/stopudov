@@ -4,6 +4,11 @@
 	--sPB: #{rem(5)};
 	background-color: $secondary;
 
+	.row {
+		@include media-breakpoint-only(lg) {
+			@include roww(10px);
+		}
+	}
 
 
 	&__col {
@@ -34,6 +39,15 @@
 			margin-right: rem(5);
 			flex-shrink: 0;
 		}
+	}
+
+	&__catalog {
+		padding: rem(5) rem(20px);
+		border-radius: 2px;
+		border: 1px solid #fff;
+		background-color: #9E1E1E;
+		color: #fff;
+		text-decoration: none;
 	}
 
 

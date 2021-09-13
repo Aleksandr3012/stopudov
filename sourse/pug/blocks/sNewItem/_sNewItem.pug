@@ -2,8 +2,20 @@ mixin sNewItem(data)
 	// start sNewItem
 	+b.SECTION.sNewItem.section#sNewItem&attributes(attributes)
 		.container
-			+b.section-title
-				h2 sNewItem
+			+b.section-title.border-bottom
+				h2 Новинки
 				
 			.row
+				mixin item(i,t,m)
+					.col-6.col-lg-3
+						+e.item.text-center(href="#")
+							+e.imgWrap
+								+pic(`newProd-${i}.png`,'','')
+							+e.txtWrap
+								+e.name= t 
+								strong= m
+				+item('1','Мука амарантовая','0,3 кг')
+				+item('2','Булгур с грибами','0,4 кг')
+				+item('3','Мука миндальная','200 г')
+				+item('4','Булгур с овощами, zip','70 г')
 	// end sNewItem

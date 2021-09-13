@@ -1,9 +1,25 @@
 mixin footer()
 	+b.FOOTER.footer
-		.container
-			.row
-				.col
-					
-				.col
-				.col
-				.col-auto
+		+e.head
+			.container
+				.row.align-items-center
+					+e.col.col-lg
+						+e.site Наши корпоративные сайты:
+						+e.UL.siteList
+							li: a(href="#" target="_blank") Вариатор
+							li: a(href="#" target="_blank") Огонек
+							li: a(href="#" target="_blank") Вершок
+					.col-lg-auto
+						+e.btn.btn(href="#") Оставить отзыв
+		+e.foot 
+			.container 
+				.row 
+					.col.col-lg-auto
+						+e.copyright ©
+							span.currentYear
+							| “Сто пудів тм”
+					.col.d-none.d-lg-block
+						+soc
+					.col-auto
+						+e.dev(href="#") Разработка сайта wu.ua
+

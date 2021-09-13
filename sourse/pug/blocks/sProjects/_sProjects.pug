@@ -1,0 +1,20 @@
+mixin sProjects(data)
+	// start sProjects
+	+b.SECTION.sProjects.section#sProjects&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Проекты
+				
+			.row
+				mixin item(i,t,text)
+					.col-md-4 
+						+e.item(href="#")
+							+e.imgWrap 
+								+e.imgTxt&attributes(attributes)
+									span= t 
+								+pic(`project-${i}.jpg`,'','')
+							+e.txt= text
+				+item('1','Живи легко!','Внешнеэкономическая деятельность')(style="--info-color: #91C834")
+				+item('2','Покупай легко!','Интернет-магазин')(style="--info-color: #5296C8")
+				+item('3','Готовь легко!','Видеорецепты')(style="--info-color: #E26B00")
+	// end sProjects
