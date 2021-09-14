@@ -1,0 +1,43 @@
+mixin sitebar(data)
+	// start sitebar
+	+b.sitebar#sitebar&attributes(attributes)
+		+e.btn--js.btn.btn-primary Фильтр
+			+icon('filter')
+		+e.inner--js
+			+e.UL.main 
+				+e.LI.item.active: a(href="#") Готовые смеси для выпечки
+				+e.LI.item: a(href="#") Блюда удобного приготовления
+				+e.LI.item: a(href="#") Правильное питание
+				+e.LI.item: a(href="#") Мюсли, хлопья, каши
+				+e.LI.item--hasChild.accardionContainer.accardionContainer--js
+					+e.accardionWrap
+						a(href="#") Крупы
+						.sitebarAccardionToggle.sitebarAccardionToggle--js
+							+icon('caret-square-down')
+					+e.UL.submenu.sitebarAccardionHidden.sitebarAccardionHidden--js
+						li: a(href="#") Крупы в варочных пакетиках
+						li: a(href="#") Гречневая
+						li: a(href="#") Рисовая
+						li: a(href="#") Пшено
+						li: a(href="#") Манная
+						li: a(href="#") Пшеничная
+						li: a(href="#") Булгур
+						li: a(href="#") Кус-кус
+						li: a(href="#") Кукурузная
+						li: a(href="#") Ячменная
+						li: a(href="#") Овсяная
+						li: a(href="#") Гороховая
+						li: a(href="#") Экзотика
+				+e.LI.item: a(href="#") Бобовые
+				+e.LI.item: a(href="#") Мука, крахмал, панировочные сухари
+				+e.LI.item: a(href="#") Наборы для приготовления
+				+e.LI.item: a(href="#") Продукты в офис и в дорогу
+				+e.LI.item: a(href="#") Макаронные изделия
+				+e.LI.item: a(href="#") Сахар, соль, сода, лимонная кислота
+				+e.LI.item: a(href="#") Сухофрукты, орехи и сухие грибы
+				+e.LI.item: a(href="#") Кондитерское сырьё, халва, чай
+				+e.LI.item: a(href="#") Молочные продукты
+				+e.LI.item: a(href="#") Мясные консервы
+				+e.LI.item: a(href="#") Растительное масло
+				+e.LI.item: a(href="#") HoReCa
+	// end sitebar

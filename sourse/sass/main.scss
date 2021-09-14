@@ -1,8 +1,8 @@
 $output-bourbon-deprecation-warnings: false;
-  // @use "sass:list";
-  // @use "sass:map";
-  @use "sass:math";
-  // @use "sass:meta";
+	// @use "sass:list";
+	// @use "sass:map";
+	@use "sass:math";
+	// @use "sass:meta";
 
 // @import "mq";
 @import "bourbon/app/assets/stylesheets/bourbon";
@@ -70,7 +70,7 @@ $output-bourbon-deprecation-warnings: false;
 
 
 .breadcrumb {
-  margin-bottom: 0;
+	margin-bottom: 0;
 	.active {
 		a {
 			color: $breadcrumb-active-color;
@@ -78,39 +78,65 @@ $output-bourbon-deprecation-warnings: false;
 		}
 	}
 
-  &-item a {
-    color: $body-color;
-  }
+	&-item a {
+		color: $body-color;
+	}
 }
 @import "./node_modules/bootstrap/scss/pagination";
 
 .breadcrumb-item+.breadcrumb-item:before {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 4.5px 0 4.5px 6px;
-  border-color: transparent transparent transparent #585858;
-  margin-top: 8px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 4.5px 0 4.5px 6px;
+	border-color: transparent transparent transparent #585858;
+	margin-top: 8px;
 }
 
 .pagination-wrapper ul {
 	@extend .pagination;
+	justify-content: center;
+	padding: rem(20) 0;
+	@include roww(5px, m);
 }
 
 .pagination-wrapper li .page-numbers {
 	@extend .page-link;
+
+	@include media-breakpoint-down(sm) {
+		padding: .15rem .45rem;
+	}
+
+	.icon {
+		font-size: rem(12);
+		margin: 0 rem(3);
+		@media (max-width: 400px) {
+			margin: 0 rem(5);
+		} 
+	}
 }
 
 .pagination-wrapper li {
 	@extend .page-item;
 
+	@include media-breakpoint-down(sm) {
+		font-size: $small;
+	}
+
 	.current {
 		z-index: 1;
-		// color: $pagination-active-color;
+		pointer-events: none;
+		color: #999;
 		// background-color: $pagination-active-bg;
-		// border-color: $pagination-active-border-color;
+		border-color: #999;
 	}
 }
+
+.pagination-wrapper li span.prev, .pagination-wrapper li span.next {
+	pointer-events: none;
+	border-color: #999;
+}
+
 @import "root";
 @import "base";
 @import '../pug/blocks/**/*.scss';

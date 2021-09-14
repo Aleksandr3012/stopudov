@@ -113,6 +113,11 @@
 
 	&__rList {
 		list-style: none;
+
+		a {
+			text-align: center !important;
+			padding: rem(5px) rem(10px);
+		}
 	}
 
 	&__col {

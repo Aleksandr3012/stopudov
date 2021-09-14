@@ -137,6 +137,10 @@ h1, .h1, h2, .h2 {
 	font-family: $font-family-code;
 }
 
+.mono2 {
+	font-family: $font-family-monospace2;
+}
+
 .small {
 	font-size: $small;
 }
@@ -220,6 +224,9 @@ h1, .h1, h2, .h2 {
 	}
 }
 
+.btn-primary {
+	color: #fff !important;
+}
 
 .strong {
 	font-weight: bold;

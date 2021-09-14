@@ -1,0 +1,104 @@
+// start .sitebar
+.sitebar {
+
+	&__inner {
+		@include media-breakpoint-up(lg) {
+			display: block;
+		}
+
+		@include media-breakpoint-down(lg) {
+			display: none;
+		}
+
+		padding-bottom: rem(30);
+	}
+
+	ul {
+		margin-bottom: 0;
+		list-style: none;
+
+		li {
+			a {
+				color: $body-color;
+				border-bottom: 1px solid transparent;
+
+				&:hover {
+					border-bottom-color: currentColor;
+				}
+			}
+		}
+	}
+
+	&__main {
+		border: 1px solid #E5E5E5;
+	}
+
+	&__item {
+		font-size: $small;
+		padding: rem(9px) rem(12px);
+		&:not(:last-child, .active) {
+			border-bottom: 1px solid #F2F2F2;
+		}
+
+		&.active {
+			background: #15C6A0;
+			border-left: 1px solid #15C6A0;
+			border-right: 1px solid #15C6A0;
+			
+			a {
+				color: #fff;
+			}
+		}
+	}
+
+	&__accardionWrap {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__submenu {
+		padding: rem(10) 0;
+	}
+
+	&__btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: rem(15);
+		@include media-breakpoint-up(lg) {
+			display: none;
+		}
+
+		.icon {
+			font-size: rem(15);
+			margin-left: rem(10);
+		}
+	}
+
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sitebar
+
+.sitebarAccardionToggle {
+	cursor: pointer;
+	.icon {
+		color: $body-color;
+		font-size: rem(20);
+		@include mt;
+	}
+
+	&.active {
+
+		.icon {
+			transform: rotate(180deg);
+			color: $secondary;
+		}
+	}
+}
+
+.sitebarAccardionHidden {
+	display: none;
+}

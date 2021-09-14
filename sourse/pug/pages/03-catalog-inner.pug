@@ -5,8 +5,8 @@ include ../blocks/sContent/_sContent.pug
 include ../blocks/sContact/_sContact.pug
 include ../blocks/sNewItem/_sNewItem.pug
 include ../blocks/sProjects/_sProjects.pug
-include ../blocks/sAbout/_sAbout.pug
-include ../blocks/sCatalog/_sCatalog.pug
+include ../blocks/sitebar/_sitebar.pug
+include ../blocks/sCatalogInner/_sCatalogInner.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -24,11 +24,12 @@ block pagecontent
 	+b.pageHead
 		.container 
 			+breadcrumb('Главная','Каталог','Готовые смеси для выпечки')
-	+sCatalog()
-	//- +headerBlock()
-	//- +sNewItem()
-	//- +sProjects()
-	//- +sAbout()
+	.container 
+		.row 
+			.col-lg-3 
+				+sitebar()
+			.col
+				+sCatalogInner()
 	+footer()
       
 

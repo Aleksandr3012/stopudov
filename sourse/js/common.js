@@ -324,8 +324,15 @@ function eventHandler() {
 	whenResize();
 
 	$('.drop-accardion-js').on('click', function(){
-		$(this).parent().toggleClass('active')
-		.find('.drop-accardion-toggle-js').toggleClass('active');
+		$(this).parent().toggleClass('active').find('.drop-accardion-toggle-js').toggleClass('active');
+	})
+
+	$('.sitebarAccardionToggle--js').on('click', function() {
+		$(this).toggleClass('active').parents('.accardionContainer--js').find('.sitebarAccardionHidden--js').slideToggle('active');
+	})
+
+	$('.sitebar__btn--js').on('click',function(){
+		$(this).parent().find('.sitebar__inner--js').slideToggle();
 	})
 
 

@@ -75,7 +75,7 @@
 								</div>
 							</div>
 							<div class="col col-sm-auto d-lg-none">
-								<a class="topLine__logo" href="/"><img src="img/logo2.png" alt="Логотип"/>
+								<a class="topLine__logo" href="/"><img class="res-i" src="img/logo2.png" alt="Логотип"/>
 								</a>
 							</div>
 							<div class="col d-none d-lg-block">
@@ -233,442 +233,336 @@
 					</nav>
 				</div>
 			</div>
-			<!-- start sCatalog-->
-			<section class="sCatalog section" id="sCatalog">
-				<div class="container">
-					<div class="section-title border-bottom">
-						<h1>Каталог</h1>
+			<div class="container"> 
+				<div class="row"> 
+					<div class="col-lg-3"> 
+						<!-- start sitebar-->
+						<div class="sitebar" id="sitebar">
+							<div class="sitebar__btn sitebar__btn--js btn btn-primary">Фильтр
+								<svg class="icon icon-filter ">
+									<use xlink:href="img/svg/sprite.svg#filter"></use>
+								</svg>
+							</div>
+							<div class="sitebar__inner sitebar__inner--js">
+								<ul class="sitebar__main"> 
+									<li class="sitebar__item active"><a href="#">Готовые смеси для выпечки</a>
+									</li>
+									<li class="sitebar__item"><a href="#">Блюда удобного приготовления</a>
+									</li>
+									<li class="sitebar__item"><a href="#">Правильное питание</a>
+									</li>
+									<li class="sitebar__item"><a href="#">Мюсли, хлопья, каши</a>
+									</li>
+									<li class="sitebar__item sitebar__item--hasChild accardionContainer accardionContainer accardionContainer--js">
+										<div class="sitebar__accardionWrap"><a href="#">Крупы</a>
+											<div class="sitebarAccardionToggle sitebarAccardionToggle--js">
+												<svg class="icon icon-caret-square-down ">
+													<use xlink:href="img/svg/sprite.svg#caret-square-down"></use>
+												</svg>
+											</div>
+										</div>
+										<ul class="sitebar__submenu sitebarAccardionHidden sitebarAccardionHidden sitebarAccardionHidden--js">
+											<li><a href="#">Крупы в варочных пакетиках</a></li>
+											<li><a href="#">Гречневая</a></li>
+											<li><a href="#">Рисовая</a></li>
+											<li><a href="#">Пшено</a></li>
+											<li><a href="#">Манная</a></li>
+											<li><a href="#">Пшеничная</a></li>
+											<li><a href="#">Булгур</a></li>
+											<li><a href="#">Кус-кус</a></li>
+											<li><a href="#">Кукурузная</a></li>
+											<li><a href="#">Ячменная</a></li>
+											<li><a href="#">Овсяная</a></li>
+											<li><a href="#">Гороховая</a></li>
+											<li><a href="#">Экзотика</a></li>
+										</ul>
+									</li>
+									<li class="sitebar__item"><a href="#">Бобовые</a>
+									</li>
+									<li class="sitebar__item"><a href="#">Мука, крахмал, панировочные сухари</a>
+									</li>
+									<li class="sitebar__item"><a href="#">Наборы для приготовления</a>
+									</li>
+									<li class="sitebar__item"><a href="#">Продукты в офис и в дорогу</a>
+									</li>
+									<li class="sitebar__item"><a href="#">Макаронные изделия</a>
+									</li>
+									<li class="sitebar__item"><a href="#">Сахар, соль, сода, лимонная кислота</a>
+									</li>
+									<li class="sitebar__item"><a href="#">Сухофрукты, орехи и сухие грибы</a>
+									</li>
+									<li class="sitebar__item"><a href="#">Кондитерское сырьё, халва, чай</a>
+									</li>
+									<li class="sitebar__item"><a href="#">Молочные продукты</a>
+									</li>
+									<li class="sitebar__item"><a href="#">Мясные консервы</a>
+									</li>
+									<li class="sitebar__item"><a href="#">Растительное масло</a>
+									</li>
+									<li class="sitebar__item"><a href="#">HoReCa</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- end sitebar-->
 					</div>
-					<div class="row">
-								<div class="sCatalog__col col-6 col-md-4 col-lg-3 col-xxl-2">
-									<a class="sCatalog__item" href="#">
-										<div class="sCatalog__imgWrap"> 
-											<div class="sCatalog__bg"> 
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/bg-fon.webp" media="(min-width:576px)"/>
-													<source type="image/webp" srcset="img/@1x/webp/bg-fon.webp"/>
-													<source type="image/png" srcset="img/@2x/bg-fon.png" media="(min-width:576px)"/>
-													<source type="image/png" srcset="img/@1x/bg-fon.png"/><img src="img/@2x/bg-fon.png" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-											<div class="sCatalog__mainImg">
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/catalog-1.webp"/><img src="img/@2x/catalog-1.jpg" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
+					<div class="col">
+						<!-- start sCatalogInner-->
+						<section class="sCatalogInner section" id="sCatalogInner">
+							<div class="section-title border-bottom">
+								<h2>Готовые смеси для выпечки</h2>
+							</div>
+							<div class="sCatalogInner__txtWrap mono2 border-bottom">
+								<p>Современный ритм жизни диктует свои жёсткие правила.. А&nbsp;так хочется побаловать себя любимого))) родных и&nbsp;близких... наполнить дом ароматом домашней выпечки и&nbsp;собрать всю семью за&nbsp;вкусной трапезой! При этом потратив минимум усилий и&nbsp;вложений, да&nbsp;и&nbsp;чтобы получилось вкусно!!! Поэтому ТМ&nbsp;&laquo;Сто пудов&raquo; предлагает линейку готовых смесей для выпечки&nbsp;&mdash; мучные смеси, приготовленные по&nbsp;собственной технологии без использования каких-либо консервантов и&nbsp;ароматизаторов. Европейские потребители уже оценили всю простоту и&nbsp;удобство использования таких смесей для выпечки, теперь эти продукты уверенно набирают популярность и&nbsp;на&nbsp;отечественном рынке.</p>
+								<h5 class="strong">Приобрести наборы для приготовления кутьи можно в&nbsp;сети супермаркетов:</h5>
+								<ul class="colum">
+									<li>Ашан</li>
+									<li>Сильпо</li>
+									<li>Таврия</li>
+									<li>Velmart </li>
+									<li>Сокол</li>
+									<li>Арбуз</li>
+									<li>Эпицентр</li>
+									<li>Класс</li>
+									<li>Рост</li>
+									<li>Восторг</li>
+									<li>Чудо-маркет</li>
+									<li>Basket</li>
+									<li>Фирменный магазин "Сто пудов"</li>
+									<li><a href="https://100pudov.in.ua">Фирменный интернет-магазин</a></li>
+									<li><a href="https://market.stopudov.ua">Интернет-магазин "Сто пудов"</a></li>
+								</ul>
+								<h5 class="strong">Заинтересовала наша продукция? <a class="text-red" href="#">Свяжитесь с нами</a></h5>
+							</div>
+							<div class="sCatalogInner__catalog border-bottom">
+								<div class="row">
+										<div class="col-6 col-md-4">
+											<a class="sCatalogInner__item text-center" href="#">
+												<div class="sCatalogInner__imgWrap">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/catalogItem-1.webp"/><img src="img/@2x/catalogItem-1.png" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+												</div>
+												<div class="sCatalogInner__txtWrap">
+													<div class="sCatalogInner__name">Смесь для выпечки &quot;Жаворонки&quot;
+													</div><strong>0,278 кг</strong>
+												</div>
+											</a>
 										</div>
-										<div class="sCatalog__itemTitle">Готовые смеси для выпечки
+										<div class="col-6 col-md-4">
+											<a class="sCatalogInner__item text-center" href="#">
+												<div class="ribon"> 
+													<div class="ribon__line">Новинка
+													</div>
+													<div class="ribon__border">
+													</div>
+												</div>
+												<div class="sCatalogInner__imgWrap">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/catalogItem-2.webp"/><img src="img/@2x/catalogItem-2.png" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+												</div>
+												<div class="sCatalogInner__txtWrap">
+													<div class="sCatalogInner__name">Смесь для выпечки &quot;Вафли Бельгийские&quot;
+													</div><strong>0,354 кг</strong>
+												</div>
+											</a>
 										</div>
-									</a>
+										<div class="col-6 col-md-4">
+											<a class="sCatalogInner__item text-center" href="#">
+												<div class="ribon"> 
+													<div class="ribon__line">Новинка
+													</div>
+													<div class="ribon__border">
+													</div>
+												</div>
+												<div class="sCatalogInner__imgWrap">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/catalogItem-3.webp"/><img src="img/@2x/catalogItem-3.png" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+												</div>
+												<div class="sCatalogInner__txtWrap">
+													<div class="sCatalogInner__name">Смесь для выпечки &quot;Цветные блины&quot;
+													</div><strong>0,475 кг</strong>
+												</div>
+											</a>
+										</div>
+										<div class="col-6 col-md-4">
+											<a class="sCatalogInner__item text-center" href="#">
+												<div class="ribon"> 
+													<div class="ribon__line">Новинка
+													</div>
+													<div class="ribon__border">
+													</div>
+												</div>
+												<div class="sCatalogInner__imgWrap">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/catalogItem-4.webp"/><img src="img/@2x/catalogItem-4.png" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+												</div>
+												<div class="sCatalogInner__txtWrap">
+													<div class="sCatalogInner__name">Смесь для выпечки &quot;Блины&quot;
+													</div><strong>0,5 кг</strong>
+												</div>
+											</a>
+										</div>
+										<div class="col-6 col-md-4">
+											<a class="sCatalogInner__item text-center" href="#">
+												<div class="sCatalogInner__imgWrap">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/catalogItem-5.webp"/><img src="img/@2x/catalogItem-5.png" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+												</div>
+												<div class="sCatalogInner__txtWrap">
+													<div class="sCatalogInner__name">Смесь для выпечки &quot;Блины с кукурузной мукой&quot;
+													</div><strong>0,5 кг</strong>
+												</div>
+											</a>
+										</div>
+										<div class="col-6 col-md-4">
+											<a class="sCatalogInner__item text-center" href="#">
+												<div class="sCatalogInner__imgWrap">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/catalogItem-6.webp"/><img src="img/@2x/catalogItem-6.png" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+												</div>
+												<div class="sCatalogInner__txtWrap">
+													<div class="sCatalogInner__name">Смесь для выпечки &quot;Блины спельтовые&quot;
+													</div><strong>0,5 кг</strong>
+												</div>
+											</a>
+										</div>
+										<div class="col-6 col-md-4">
+											<a class="sCatalogInner__item text-center" href="#">
+												<div class="sCatalogInner__imgWrap">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/catalogItem-7.webp"/><img src="img/@2x/catalogItem-7.png" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+												</div>
+												<div class="sCatalogInner__txtWrap">
+													<div class="sCatalogInner__name">Смесь для выпечки &quot;Блины гречневые&quot;
+													</div><strong>0,5 кг</strong>
+												</div>
+											</a>
+										</div>
+										<div class="col-6 col-md-4">
+											<a class="sCatalogInner__item text-center" href="#">
+												<div class="sCatalogInner__imgWrap">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/catalogItem-8.webp"/><img src="img/@2x/catalogItem-8.png" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+												</div>
+												<div class="sCatalogInner__txtWrap">
+													<div class="sCatalogInner__name">Смесь для выпечки &quot;Оладьи&quot;
+													</div><strong>0,5 кг</strong>
+												</div>
+											</a>
+										</div>
+										<div class="col-6 col-md-4">
+											<a class="sCatalogInner__item text-center" href="#">
+												<div class="sCatalogInner__imgWrap">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/catalogItem-9.webp"/><img src="img/@2x/catalogItem-9.png" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+												</div>
+												<div class="sCatalogInner__txtWrap">
+													<div class="sCatalogInner__name">Смесь для выпечки &quot;Блины&quot;
+													</div><strong>1 кг</strong>
+												</div>
+											</a>
+										</div>
+										<div class="col-6 col-md-4">
+											<a class="sCatalogInner__item text-center" href="#">
+												<div class="sCatalogInner__imgWrap">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/catalogItem-10.webp"/><img src="img/@2x/catalogItem-10.png" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+												</div>
+												<div class="sCatalogInner__txtWrap">
+													<div class="sCatalogInner__name">Смесь для выпечки &quot;Блины&quot; для фарширования
+													</div><strong>1 кг</strong>
+												</div>
+											</a>
+										</div>
+										<div class="col-6 col-md-4">
+											<a class="sCatalogInner__item text-center" href="#">
+												<div class="sCatalogInner__imgWrap">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/catalogItem-11.webp"/><img src="img/@2x/catalogItem-11.png" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+												</div>
+												<div class="sCatalogInner__txtWrap">
+													<div class="sCatalogInner__name">Детский набор для приготовления конфет &quot;Трюфель&quot; + 3D конструктор (гостинная)
+													</div><strong>0,255 кг</strong>
+												</div>
+											</a>
+										</div>
+										<div class="col-6 col-md-4">
+											<a class="sCatalogInner__item text-center" href="#">
+												<div class="sCatalogInner__imgWrap">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/catalogItem-12.webp"/><img src="img/@2x/catalogItem-12.png" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+												</div>
+												<div class="sCatalogInner__txtWrap">
+													<div class="sCatalogInner__name">Детский набор для выпечки &quot;Капкейки&quot; с цукатами + 3D конструктор (динозавры)
+													</div><strong>0,408 кг</strong>
+												</div>
+											</a>
+										</div>
 								</div>
-								<div class="sCatalog__col col-6 col-md-4 col-lg-3 col-xxl-2">
-									<a class="sCatalog__item" href="#">
-										<div class="sCatalog__imgWrap"> 
-											<div class="sCatalog__bg"> 
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/bg-fon.webp" media="(min-width:576px)"/>
-													<source type="image/webp" srcset="img/@1x/webp/bg-fon.webp"/>
-													<source type="image/png" srcset="img/@2x/bg-fon.png" media="(min-width:576px)"/>
-													<source type="image/png" srcset="img/@1x/bg-fon.png"/><img src="img/@2x/bg-fon.png" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-											<div class="sCatalog__mainImg">
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/catalog-2.webp"/><img src="img/@2x/catalog-2.jpg" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-										</div>
-										<div class="sCatalog__itemTitle">Блюда удобного приготовления
-										</div>
-									</a>
-								</div>
-								<div class="sCatalog__col col-6 col-md-4 col-lg-3 col-xxl-2">
-									<a class="sCatalog__item" href="#">
-										<div class="sCatalog__imgWrap"> 
-											<div class="sCatalog__bg"> 
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/bg-fon.webp" media="(min-width:576px)"/>
-													<source type="image/webp" srcset="img/@1x/webp/bg-fon.webp"/>
-													<source type="image/png" srcset="img/@2x/bg-fon.png" media="(min-width:576px)"/>
-													<source type="image/png" srcset="img/@1x/bg-fon.png"/><img src="img/@2x/bg-fon.png" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-											<div class="sCatalog__mainImg">
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/catalog-3.webp"/><img src="img/@2x/catalog-3.jpg" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-										</div>
-										<div class="sCatalog__itemTitle">Правильное питание
-										</div>
-									</a>
-								</div>
-								<div class="sCatalog__col col-6 col-md-4 col-lg-3 col-xxl-2">
-									<a class="sCatalog__item" href="#">
-										<div class="sCatalog__imgWrap"> 
-											<div class="sCatalog__bg"> 
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/bg-fon.webp" media="(min-width:576px)"/>
-													<source type="image/webp" srcset="img/@1x/webp/bg-fon.webp"/>
-													<source type="image/png" srcset="img/@2x/bg-fon.png" media="(min-width:576px)"/>
-													<source type="image/png" srcset="img/@1x/bg-fon.png"/><img src="img/@2x/bg-fon.png" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-											<div class="sCatalog__mainImg">
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/catalog-4.webp"/><img src="img/@2x/catalog-4.jpg" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-										</div>
-										<div class="sCatalog__itemTitle">Мюсли, хлопья, каши
-										</div>
-									</a>
-								</div>
-								<div class="sCatalog__col col-6 col-md-4 col-lg-3 col-xxl-2">
-									<a class="sCatalog__item" href="#">
-										<div class="sCatalog__imgWrap"> 
-											<div class="sCatalog__bg"> 
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/bg-fon.webp" media="(min-width:576px)"/>
-													<source type="image/webp" srcset="img/@1x/webp/bg-fon.webp"/>
-													<source type="image/png" srcset="img/@2x/bg-fon.png" media="(min-width:576px)"/>
-													<source type="image/png" srcset="img/@1x/bg-fon.png"/><img src="img/@2x/bg-fon.png" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-											<div class="sCatalog__mainImg">
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/catalog-5.webp"/><img src="img/@2x/catalog-5.jpg" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-										</div>
-										<div class="sCatalog__itemTitle">Крупы
-										</div>
-									</a>
-								</div>
-								<div class="sCatalog__col col-6 col-md-4 col-lg-3 col-xxl-2">
-									<a class="sCatalog__item" href="#">
-										<div class="sCatalog__imgWrap"> 
-											<div class="sCatalog__bg"> 
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/bg-fon.webp" media="(min-width:576px)"/>
-													<source type="image/webp" srcset="img/@1x/webp/bg-fon.webp"/>
-													<source type="image/png" srcset="img/@2x/bg-fon.png" media="(min-width:576px)"/>
-													<source type="image/png" srcset="img/@1x/bg-fon.png"/><img src="img/@2x/bg-fon.png" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-											<div class="sCatalog__mainImg">
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/catalog-6.webp"/><img src="img/@2x/catalog-6.jpg" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-										</div>
-										<div class="sCatalog__itemTitle">Бобовые
-										</div>
-									</a>
-								</div>
-								<div class="sCatalog__col col-6 col-md-4 col-lg-3 col-xxl-2">
-									<a class="sCatalog__item" href="#">
-										<div class="sCatalog__imgWrap"> 
-											<div class="sCatalog__bg"> 
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/bg-fon.webp" media="(min-width:576px)"/>
-													<source type="image/webp" srcset="img/@1x/webp/bg-fon.webp"/>
-													<source type="image/png" srcset="img/@2x/bg-fon.png" media="(min-width:576px)"/>
-													<source type="image/png" srcset="img/@1x/bg-fon.png"/><img src="img/@2x/bg-fon.png" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-											<div class="sCatalog__mainImg">
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/catalog-7.webp"/><img src="img/@2x/catalog-7.jpg" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-										</div>
-										<div class="sCatalog__itemTitle">Мука, крахмал, панировочные сухари
-										</div>
-									</a>
-								</div>
-								<div class="sCatalog__col col-6 col-md-4 col-lg-3 col-xxl-2">
-									<a class="sCatalog__item" href="#">
-										<div class="sCatalog__imgWrap"> 
-											<div class="sCatalog__bg"> 
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/bg-fon.webp" media="(min-width:576px)"/>
-													<source type="image/webp" srcset="img/@1x/webp/bg-fon.webp"/>
-													<source type="image/png" srcset="img/@2x/bg-fon.png" media="(min-width:576px)"/>
-													<source type="image/png" srcset="img/@1x/bg-fon.png"/><img src="img/@2x/bg-fon.png" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-											<div class="sCatalog__mainImg">
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/catalog-8.webp"/><img src="img/@2x/catalog-8.jpg" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-										</div>
-										<div class="sCatalog__itemTitle">Наборы для приготовления
-										</div>
-									</a>
-								</div>
-								<div class="sCatalog__col col-6 col-md-4 col-lg-3 col-xxl-2">
-									<a class="sCatalog__item" href="#">
-										<div class="sCatalog__imgWrap"> 
-											<div class="sCatalog__bg"> 
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/bg-fon.webp" media="(min-width:576px)"/>
-													<source type="image/webp" srcset="img/@1x/webp/bg-fon.webp"/>
-													<source type="image/png" srcset="img/@2x/bg-fon.png" media="(min-width:576px)"/>
-													<source type="image/png" srcset="img/@1x/bg-fon.png"/><img src="img/@2x/bg-fon.png" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-											<div class="sCatalog__mainImg">
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/catalog-9.webp"/><img src="img/@2x/catalog-9.jpg" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-										</div>
-										<div class="sCatalog__itemTitle">Продукты в офис и в дорогу
-										</div>
-									</a>
-								</div>
-								<div class="sCatalog__col col-6 col-md-4 col-lg-3 col-xxl-2">
-									<a class="sCatalog__item" href="#">
-										<div class="sCatalog__imgWrap"> 
-											<div class="sCatalog__bg"> 
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/bg-fon.webp" media="(min-width:576px)"/>
-													<source type="image/webp" srcset="img/@1x/webp/bg-fon.webp"/>
-													<source type="image/png" srcset="img/@2x/bg-fon.png" media="(min-width:576px)"/>
-													<source type="image/png" srcset="img/@1x/bg-fon.png"/><img src="img/@2x/bg-fon.png" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-											<div class="sCatalog__mainImg">
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/catalog-10.webp"/><img src="img/@2x/catalog-10.jpg" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-										</div>
-										<div class="sCatalog__itemTitle">Макаронные изделия
-										</div>
-									</a>
-								</div>
-								<div class="sCatalog__col col-6 col-md-4 col-lg-3 col-xxl-2">
-									<a class="sCatalog__item" href="#">
-										<div class="sCatalog__imgWrap"> 
-											<div class="sCatalog__bg"> 
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/bg-fon.webp" media="(min-width:576px)"/>
-													<source type="image/webp" srcset="img/@1x/webp/bg-fon.webp"/>
-													<source type="image/png" srcset="img/@2x/bg-fon.png" media="(min-width:576px)"/>
-													<source type="image/png" srcset="img/@1x/bg-fon.png"/><img src="img/@2x/bg-fon.png" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-											<div class="sCatalog__mainImg">
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/catalog-11.webp"/><img src="img/@2x/catalog-11.jpg" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-										</div>
-										<div class="sCatalog__itemTitle">Сахар, соль, сода, лимонная кислота
-										</div>
-									</a>
-								</div>
-								<div class="sCatalog__col col-6 col-md-4 col-lg-3 col-xxl-2">
-									<a class="sCatalog__item" href="#">
-										<div class="sCatalog__imgWrap"> 
-											<div class="sCatalog__bg"> 
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/bg-fon.webp" media="(min-width:576px)"/>
-													<source type="image/webp" srcset="img/@1x/webp/bg-fon.webp"/>
-													<source type="image/png" srcset="img/@2x/bg-fon.png" media="(min-width:576px)"/>
-													<source type="image/png" srcset="img/@1x/bg-fon.png"/><img src="img/@2x/bg-fon.png" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-											<div class="sCatalog__mainImg">
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/catalog-12.webp"/><img src="img/@2x/catalog-12.jpg" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-										</div>
-										<div class="sCatalog__itemTitle">Сухофрукты, орехи и сухие грибы
-										</div>
-									</a>
-								</div>
-								<div class="sCatalog__col col-6 col-md-4 col-lg-3 col-xxl-2">
-									<a class="sCatalog__item" href="#">
-										<div class="sCatalog__imgWrap"> 
-											<div class="sCatalog__bg"> 
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/bg-fon.webp" media="(min-width:576px)"/>
-													<source type="image/webp" srcset="img/@1x/webp/bg-fon.webp"/>
-													<source type="image/png" srcset="img/@2x/bg-fon.png" media="(min-width:576px)"/>
-													<source type="image/png" srcset="img/@1x/bg-fon.png"/><img src="img/@2x/bg-fon.png" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-											<div class="sCatalog__mainImg">
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/catalog-13.webp"/><img src="img/@2x/catalog-13.jpg" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-										</div>
-										<div class="sCatalog__itemTitle">Кондитерское сырьё, халва, чай
-										</div>
-									</a>
-								</div>
-								<div class="sCatalog__col col-6 col-md-4 col-lg-3 col-xxl-2">
-									<a class="sCatalog__item" href="#">
-										<div class="sCatalog__imgWrap"> 
-											<div class="sCatalog__bg"> 
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/bg-fon.webp" media="(min-width:576px)"/>
-													<source type="image/webp" srcset="img/@1x/webp/bg-fon.webp"/>
-													<source type="image/png" srcset="img/@2x/bg-fon.png" media="(min-width:576px)"/>
-													<source type="image/png" srcset="img/@1x/bg-fon.png"/><img src="img/@2x/bg-fon.png" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-											<div class="sCatalog__mainImg">
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/catalog-14.webp"/><img src="img/@2x/catalog-14.jpg" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-										</div>
-										<div class="sCatalog__itemTitle">Молочные продукты
-										</div>
-									</a>
-								</div>
-								<div class="sCatalog__col col-6 col-md-4 col-lg-3 col-xxl-2">
-									<a class="sCatalog__item" href="#">
-										<div class="sCatalog__imgWrap"> 
-											<div class="sCatalog__bg"> 
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/bg-fon.webp" media="(min-width:576px)"/>
-													<source type="image/webp" srcset="img/@1x/webp/bg-fon.webp"/>
-													<source type="image/png" srcset="img/@2x/bg-fon.png" media="(min-width:576px)"/>
-													<source type="image/png" srcset="img/@1x/bg-fon.png"/><img src="img/@2x/bg-fon.png" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-											<div class="sCatalog__mainImg">
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/catalog-15.webp"/><img src="img/@2x/catalog-15.jpg" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-										</div>
-										<div class="sCatalog__itemTitle">Мясные консервы
-										</div>
-									</a>
-								</div>
-								<div class="sCatalog__col col-6 col-md-4 col-lg-3 col-xxl-2">
-									<a class="sCatalog__item" href="#">
-										<div class="sCatalog__imgWrap"> 
-											<div class="sCatalog__bg"> 
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/bg-fon.webp" media="(min-width:576px)"/>
-													<source type="image/webp" srcset="img/@1x/webp/bg-fon.webp"/>
-													<source type="image/png" srcset="img/@2x/bg-fon.png" media="(min-width:576px)"/>
-													<source type="image/png" srcset="img/@1x/bg-fon.png"/><img src="img/@2x/bg-fon.png" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-											<div class="sCatalog__mainImg">
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/catalog-16.webp"/><img src="img/@2x/catalog-16.jpg" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-										</div>
-										<div class="sCatalog__itemTitle">Растительное масло
-										</div>
-									</a>
-								</div>
-								<div class="sCatalog__col col-6 col-md-4 col-lg-3 col-xxl-2">
-									<a class="sCatalog__item" href="#">
-										<div class="sCatalog__imgWrap"> 
-											<div class="sCatalog__bg"> 
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/bg-fon.webp" media="(min-width:576px)"/>
-													<source type="image/webp" srcset="img/@1x/webp/bg-fon.webp"/>
-													<source type="image/png" srcset="img/@2x/bg-fon.png" media="(min-width:576px)"/>
-													<source type="image/png" srcset="img/@1x/bg-fon.png"/><img src="img/@2x/bg-fon.png" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-											<div class="sCatalog__mainImg">
-												<!-- picture-->
-												<picture> 
-													<source type="image/webp" srcset="img/@2x/webp/catalog-17.webp"/><img src="img/@2x/catalog-17.jpg" alt="" loading="lazy"/>
-												</picture>
-												<!-- /picture-->
-											</div>
-										</div>
-										<div class="sCatalog__itemTitle">HoReCa
-										</div>
-									</a>
-								</div>
+							</div>
+							<div class="pagination-wrapper">
+								<ul class="page-numbers">
+											<li><span class="prev page-numbers">
+													<svg class="icon icon-caret-left ">
+														<use xlink:href="img/svg/sprite.svg#caret-left"></use>
+													</svg><span>Назад</span></span>
+											</li>
+											<li><span class="page-numbers current"> 1</span>
+											</li>
+											<li><a class="page-numbers" href="#">2</a>
+											</li>
+											<li><a class="page-numbers" href="#">3</a>
+											</li>
+											<li><a class="page-numbers" href="#">4</a>
+											</li>
+											<li><a class="next page-numbers" href="#"> <span>Вперед</span>
+													<svg class="icon icon-caret-right ">
+														<use xlink:href="img/svg/sprite.svg#caret-right"></use>
+													</svg></a>
+											</li>
+								</ul>
+							</div>
+						</section>
+						<!-- end sCatalogInner-->
 					</div>
 				</div>
-			</section>
-			<!-- end sCatalog-->
+			</div>
 			<footer class="footer">
 				<div class="footer__head">
 					<div class="container">
