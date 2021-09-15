@@ -1,0 +1,32 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sNewItem/_sNewItem.pug
+include ../blocks/sProjects/_sProjects.pug
+include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sNews/_sNews.pug
+
+block variables
+	- let  mainPage= null
+	- let  bg= null
+
+block title
+	- let  title= 'Новости'
+	title= title
+block pagecontent 
+
+	+mob-mnu()
+	+header()
+		+topLine()
+		+top-nav()
+	+b.pageHead
+		.container 
+			+breadcrumb('Главная', title)
+	+sNews()
+	+footer()
+      
+
+
+

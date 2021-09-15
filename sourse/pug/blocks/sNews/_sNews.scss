@@ -1,0 +1,57 @@
+// start .sNews
+.sNews {
+	@include media-breakpoint-up(md) {
+		--sPT: #{rem(20)};
+	}
+	// --sPB: ;
+	// --sTPB: ;
+
+
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sNews
+
+.newsItem {
+	font-weight: 300;
+	padding-bottom: rem(40);
+	@include media-breakpoint-up(md) {
+		padding-bottom: rem(60);
+	}
+
+	&__row {
+		@include media-breakpoint-up(sm) {
+			@include roww(40px);
+		}
+		padding-bottom: rem(15);
+	}
+	&__title {
+		padding-bottom: rem(10);
+		@include rfs(22px);
+		line-height: calc(24 / 22);
+	}
+
+	&__btn {
+		font-size: rem(18);
+	}
+
+	&__rubric {
+		color: $light;
+		display: inline-block;
+		border-bottom: solid 1px;
+
+		&:hover {
+			border-bottom-color: transparent;
+		}
+	}
+
+	&__imgWrap {
+		display: block;
+
+		img {
+			width: 100%;
+			margin-bottom: rem(10px);
+		}
+	}
+}

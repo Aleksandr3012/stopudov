@@ -98,6 +98,7 @@ $output-bourbon-deprecation-warnings: false;
 	justify-content: center;
 	padding: rem(20) 0;
 	@include roww(5px, m);
+	flex-wrap: wrap;
 }
 
 .pagination-wrapper li .page-numbers {

@@ -8,6 +8,9 @@
 		@include media-breakpoint-only(lg) {
 			@include roww(10px);
 		}
+		@include media-breakpoint-only(sm) {
+			@include roww(10px);
+		}
 	}
 
 

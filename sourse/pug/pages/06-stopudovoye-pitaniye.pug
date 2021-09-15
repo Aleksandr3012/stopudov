@@ -1,0 +1,32 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sNewItem/_sNewItem.pug
+include ../blocks/sProjects/_sProjects.pug
+include ../blocks/sNews/_sNews.pug
+include ../blocks/sNutrition/_sNutrition.pug
+
+block variables
+	- let  mainPage= null
+	- let  bg= null
+
+block title
+	- let  title= 'Стопудовое питание'
+	title= title
+block pagecontent 
+
+	+mob-mnu()
+	+header()
+		+topLine()
+		+top-nav()
+	+b.pageHead
+		.container 
+			+breadcrumb('Главная', title)
+	+sNutrition()
+	+footer()
+      
+
+
+

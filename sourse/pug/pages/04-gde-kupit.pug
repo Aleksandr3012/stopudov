@@ -1,0 +1,46 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sNewItem/_sNewItem.pug
+include ../blocks/sProjects/_sProjects.pug
+include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sCatalog/_sCatalog.pug
+
+block variables
+	- let  mainPage= null
+	- let  bg= null
+
+block title
+	- let  title= 'Продукты питания. Каталог продукции | Сто пудов™'
+	title= title
+block pagecontent 
+
+	+mob-mnu()
+	+header()
+		+topLine()
+		+top-nav()
+	+sContent()
+		+b.section-title
+			h1 Где купить
+		h3 Интернет-магазин
+		p У&nbsp;розничных и&nbsp;оптовых покупателей по&nbsp;Украине есть возможность покупать продукцию ТМ&nbsp;&laquo;Сто пудов&raquo;, а&nbsp;также ещё большой ассортимент продуктов питания через интернет. Для Вас работает фирменный интернет-магазин #[a(href="http://100pudov.in.ua") 100pudov.in.ua]
+		p Для оптовых покупателей в&nbsp;г. Харьков работает фирменная оптовая база &laquo;Сто пудов&raquo;, где можно приобрести весь ассортимент продукции ТМ&nbsp;&laquo;Сто пудов&raquo; и&nbsp;ещё много товаров бакалейной группы. Она находится по&nbsp;адресу: г. Харьков, ул. Морозова, 11. Для удобства постоянных покупателей заказы можно делать через онлайн-супермаркет #[a(href="http://market.stopudov.ua") market.stopudov.ua]
+		h3 Фирменная торговля
+		p В&nbsp;Харькове весь ассортимент продукции можно купить в&nbsp;фирменном магазине, который находится по&nbsp;адресу&nbsp;ул. Гвардейцев Широнинцев, 45&nbsp;без перерыва и&nbsp;выходных с&nbsp;8&nbsp;до&nbsp;22.00, понедельник&nbsp;&mdash; с&nbsp;8&nbsp;до&nbsp;18.00. Кроме этого фирменный магазин стал одним из&nbsp;популярных мест отдыха для детей и&nbsp;взрослых.
+		a(href="img/@2x/1.jpg" data-fancybox="image-1") 
+			+pic('1.jpg')
+		.videoWrap 
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/L_ngHbcuFOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		h3 Торговые сети
+		p Продукцию ТМ&nbsp;&laquo;Сто пудов&raquo; можно приобрести в&nbsp;следующих торговых сетях:
+		a(href="img/@2x/partnerLogo.jpg" data-fancybox="image-2") 
+			+pic('partnerLogo.jpg')
+		h3 В регионах
+		p Для уточнения мест продаж в регионах звоните по номеру горячей линии #[a.strong(href="tel:0800501766") 0 800 501 766]
+	+footer()
+      
+
+
+

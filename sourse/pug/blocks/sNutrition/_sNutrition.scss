@@ -1,0 +1,39 @@
+// start .sNutrition
+.sNutrition {
+	--sPT: #{rem(20)};
+	@include media-breakpoint-up(md) {
+		--sPT: #{rem(30)};
+	}
+	// --sPB: ;
+	// --sTPB: ;
+
+	.sitebar__inner {
+		@include media-breakpoint-only(md) {
+			display: block !important;
+		}
+		a {
+			display: block;
+			color: $body-color;
+
+
+			&:hover {
+				color: $secondary;
+			}
+		}
+	}
+
+	.sitebar__btn {
+		@include media-breakpoint-down(md) {
+			background: $primary;
+			color: #fff;
+			padding: rem(7) rem(12);
+			border-radius: 3px;
+			margin-bottom: rem(30);
+		}
+	}
+
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sNutrition
