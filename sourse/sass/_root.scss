@@ -2,7 +2,10 @@
 :root {
 	--animate-delay: 1.2s;
 	--bs-body-font-size: #{$em-base};
-	--top-nav-height: #{rem(90)};
+	--top-nav-height: #{rem(58)};
+	@include media-breakpoint-up(lg) {
+		--top-nav-height: #{rem(90)};
+	}
 	@include media-breakpoint-up(xl) {
 		--top-nav-height: #{rem(100)};
 	}

@@ -296,9 +296,10 @@ const $ = jQuery;
 
 function eventHandler() {
 	// JSCCommon.ifie();
-	JSCCommon.modalCall(); // JSCCommon.tabscostume('tabs');
-
-	JSCCommon.getCurrentYear('.currentYear'); // JSCCommon.inputMask();
+	JSCCommon.modalCall();
+	JSCCommon.tabscostume('tabs');
+	JSCCommon.getCurrentYear('.currentYear');
+	JSCCommon.mobileMenu(); // JSCCommon.inputMask();
 	// JSCCommon.sendForm();
 	// JSCCommon.heightwindow();
 	// JSCCommon.toggleShow(".catalog-block__toggle--desctop", '.catalog-block__dropdown');

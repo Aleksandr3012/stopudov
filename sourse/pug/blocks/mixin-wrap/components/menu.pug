@@ -19,9 +19,12 @@ mixin mnu-l()
 			"О ТМ “Сто Пудов”":"#",
 			}
 	ul.menu.menu--left(itemscope itemtype="http://schema.org/SiteNavigationElement")
-		li.menu-item.menu-item-has-children
-			a(href="#" itemprop="url") Каталог
-			.menu__wrap
+		li.menu-item.menu-item-has-children.accardionContainer--js
+			.menu__catalog
+				a(href="#" itemprop="url") Каталог
+				.sitebarAccardionToggle.sitebarAccardionToggle--js
+					+icon('chevron-down')
+			.menu__wrap.sitebarAccardionHidden.sitebarAccardionHidden--js
 				.row 
 					.col
 						span.menu__head Продукция

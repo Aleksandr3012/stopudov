@@ -3,8 +3,14 @@ mixin mob-mnu()
 		+b.toggle-menu-mobile--js
 			span
 		+e.inner
+			+e.wrap.d-sm-none
+				+searchBlock
 			+mnu-l()
 			+mnu-r()
+			+e.link(href="http://100pudov.in.ua/" target="_blank") Интернет-магазин
+			+e.wrap
+				+langBlock
+				+soc
 	//  мобильное меню
 
 mixin top-nav() 

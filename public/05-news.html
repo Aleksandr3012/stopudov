@@ -17,9 +17,30 @@
 				<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
 				</div>
 				<div class="menu-mobile__inner">
+					<div class="menu-mobile__wrap d-sm-none">
+						<div class="search">
+							<form>
+								<div class="search__input-wrap form-group"><input class="search__input form-control" name="search" type="search" placeholder="Поиск по товарам"/>
+								</div>
+								<!-- +e.input-wrap-->
+								<button class="search__btn" type="submit">
+									<svg class="icon icon-search ">
+										<use xlink:href="img/svg/sprite.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+						</div>
+					</div>
 					<ul class="menu menu--left" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-						<li class="menu-item menu-item-has-children"><a href="#" itemprop="url">Каталог</a>
-							<div class="menu__wrap">
+						<li class="menu-item menu-item-has-children accardionContainer--js">
+							<div class="menu__catalog"><a href="#" itemprop="url">Каталог</a>
+								<div class="sitebarAccardionToggle sitebarAccardionToggle--js">
+									<svg class="icon icon-chevron-down ">
+										<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="menu__wrap sitebarAccardionHidden sitebarAccardionHidden--js">
 								<div class="row"> 
 									<div class="col"><span class="menu__head">Продукция</span>
 										<ul class="sub-menu">
@@ -61,6 +82,42 @@
 						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Стопудовое питание</a></li>
 						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
 					</ul>
+					<a class="menu-mobile__link" href="http://100pudov.in.ua/" target="_blank">Интернет-магазин
+					</a>
+					<div class="menu-mobile__wrap">
+						<div class="langBlock">
+							<div class="langBlock__item drop-accardion-js"> 
+								<div class="langBlock__activeLang">RU
+									<svg class="icon icon-sort-down ">
+										<use xlink:href="img/svg/sprite.svg#sort-down"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="langBlock__itemsHidden drop-accardion-toggle-js">
+								<a class="langBlock__link" href="#">UA
+								</a>
+								<a class="langBlock__link" href="#">EN
+								</a>
+							</div>
+						</div>
+						<div class="soc">
+							<a class="soc__item" href="https://www.facebook.com/100pudov" target="_blank">
+								<svg class="icon icon-fb ">
+									<use xlink:href="img/svg/sprite.svg#fb"></use>
+								</svg>
+							</a>
+							<a class="soc__item" href="https://www.youtube.com/channel/UC0DPRNDdDJAIYhvDIfY-4wg" target="_blank">
+								<svg class="icon icon-youtube ">
+									<use xlink:href="img/svg/sprite.svg#youtube"></use>
+								</svg>
+							</a>
+							<a class="soc__item" href="https://www.instagram.com/stopudov.ua" target="_blank">
+								<svg class="icon icon-instagram ">
+									<use xlink:href="img/svg/sprite.svg#instagram"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!--  мобильное меню-->
@@ -163,8 +220,15 @@
 						<div class="row align-items-center">
 							<div class="col">
 								<ul class="menu menu--left" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-									<li class="menu-item menu-item-has-children"><a href="#" itemprop="url">Каталог</a>
-										<div class="menu__wrap">
+									<li class="menu-item menu-item-has-children accardionContainer--js">
+										<div class="menu__catalog"><a href="#" itemprop="url">Каталог</a>
+											<div class="sitebarAccardionToggle sitebarAccardionToggle--js">
+												<svg class="icon icon-chevron-down ">
+													<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="menu__wrap sitebarAccardionHidden sitebarAccardionHidden--js">
 											<div class="row"> 
 												<div class="col"><span class="menu__head">Продукция</span>
 													<ul class="sub-menu">

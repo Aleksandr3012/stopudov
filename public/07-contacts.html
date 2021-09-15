@@ -17,9 +17,30 @@
 				<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
 				</div>
 				<div class="menu-mobile__inner">
+					<div class="menu-mobile__wrap d-sm-none">
+						<div class="search">
+							<form>
+								<div class="search__input-wrap form-group"><input class="search__input form-control" name="search" type="search" placeholder="Поиск по товарам"/>
+								</div>
+								<!-- +e.input-wrap-->
+								<button class="search__btn" type="submit">
+									<svg class="icon icon-search ">
+										<use xlink:href="img/svg/sprite.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+						</div>
+					</div>
 					<ul class="menu menu--left" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-						<li class="menu-item menu-item-has-children"><a href="#" itemprop="url">Каталог</a>
-							<div class="menu__wrap">
+						<li class="menu-item menu-item-has-children accardionContainer--js">
+							<div class="menu__catalog"><a href="#" itemprop="url">Каталог</a>
+								<div class="sitebarAccardionToggle sitebarAccardionToggle--js">
+									<svg class="icon icon-chevron-down ">
+										<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="menu__wrap sitebarAccardionHidden sitebarAccardionHidden--js">
 								<div class="row"> 
 									<div class="col"><span class="menu__head">Продукция</span>
 										<ul class="sub-menu">
@@ -61,6 +82,42 @@
 						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Стопудовое питание</a></li>
 						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
 					</ul>
+					<a class="menu-mobile__link" href="http://100pudov.in.ua/" target="_blank">Интернет-магазин
+					</a>
+					<div class="menu-mobile__wrap">
+						<div class="langBlock">
+							<div class="langBlock__item drop-accardion-js"> 
+								<div class="langBlock__activeLang">RU
+									<svg class="icon icon-sort-down ">
+										<use xlink:href="img/svg/sprite.svg#sort-down"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="langBlock__itemsHidden drop-accardion-toggle-js">
+								<a class="langBlock__link" href="#">UA
+								</a>
+								<a class="langBlock__link" href="#">EN
+								</a>
+							</div>
+						</div>
+						<div class="soc">
+							<a class="soc__item" href="https://www.facebook.com/100pudov" target="_blank">
+								<svg class="icon icon-fb ">
+									<use xlink:href="img/svg/sprite.svg#fb"></use>
+								</svg>
+							</a>
+							<a class="soc__item" href="https://www.youtube.com/channel/UC0DPRNDdDJAIYhvDIfY-4wg" target="_blank">
+								<svg class="icon icon-youtube ">
+									<use xlink:href="img/svg/sprite.svg#youtube"></use>
+								</svg>
+							</a>
+							<a class="soc__item" href="https://www.instagram.com/stopudov.ua" target="_blank">
+								<svg class="icon icon-instagram ">
+									<use xlink:href="img/svg/sprite.svg#instagram"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!--  мобильное меню-->
@@ -163,8 +220,15 @@
 						<div class="row align-items-center">
 							<div class="col">
 								<ul class="menu menu--left" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-									<li class="menu-item menu-item-has-children"><a href="#" itemprop="url">Каталог</a>
-										<div class="menu__wrap">
+									<li class="menu-item menu-item-has-children accardionContainer--js">
+										<div class="menu__catalog"><a href="#" itemprop="url">Каталог</a>
+											<div class="sitebarAccardionToggle sitebarAccardionToggle--js">
+												<svg class="icon icon-chevron-down ">
+													<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="menu__wrap sitebarAccardionHidden sitebarAccardionHidden--js">
 											<div class="row"> 
 												<div class="col"><span class="menu__head">Продукция</span>
 													<ul class="sub-menu">
@@ -219,269 +283,19 @@
 				<!-- end top-nav-->
 			</header>
 			<!-- end header-->
-			<div class="pageHead">
-				<div class="container"> 
-					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
-							<li class="breadcrumb-item" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span>
-									<meta itemprop="position" content="1"/></a></li>
-							<li class="breadcrumb-item active" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Стопудовое питание</span>
-									<meta itemprop="position" content="2"/></a></li>
-						</ol>
-					</nav>
-				</div>
-			</div>
-			<!-- start sNutrition-->
-			<section class="sNutrition section" id="sNutrition">
-				<div class="container container--medium">
+			<!-- start sContact-->
+			<section class="sContact section" id="sContact">
+				<div class="container-fluid">
 					<div class="section-title">
-						<h1>Стопудовое питание</h1>
+						<h2>Контакты</h2>
 					</div>
 					<div class="row">
-						<div class="col-md-auto"> 
-							<div class="sNutrition__sitebar">
-								<h3 class="sitebar__btn sitebar__btn--js d-inline-flex">Рубрики
-									<div class="d-lg-none"> 
-										<svg class="icon icon-filter ">
-											<use xlink:href="img/svg/sprite.svg#filter"></use>
-										</svg>
-									</div>
-								</h3>
-								<div class="sitebar__inner sitebar__inner--js"><a href="#">Кулинарная книга</a><a href="#">Правильное питание</a>
-									<div class="h3 fw-300 pt-3">Популярные статьи</div>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="border-bottom">
-								<div class="newsItem"> 
-									<div class="newsItem__imgWrap"> 
-										<!-- picture-->
-										<picture> 
-											<source type="image/webp" srcset="img/@2x/webp/thumb-article-700x653-edcf.webp"/><img src="img/@2x/thumb-article-700x653-edcf.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
-									</div>
-									<div class="newsItem__title">Творожные вафли с чиа
-									</div>
-									<div class="newsItem__row row"> 
-										<div class="col-auto"> <span class="text-light">14.06.21</span></div>
-										<div class="col"><span class="text-light">Рубрика:
-												<a class="newsItem__rubric" href="#">Кулинарная книга
-												</a></span></div>
-									</div>
-									<p>Мегапростой рецепт невероятно вкусно завтрака!</p>
-									<a class="newsItem__btn btn btn-primary" href="#">Читать полностью
-									</a>
-								</div>
-								<div class="newsItem"> 
-									<div class="newsItem__imgWrap"> 
-										<!-- picture-->
-										<picture> 
-											<source type="image/webp" srcset="img/@2x/webp/thumb-article-575x579-7d2d.webp"/><img src="img/@2x/thumb-article-575x579-7d2d.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
-									</div>
-									<div class="newsItem__title">Правила правильного питания
-									</div>
-									<div class="newsItem__row row"> 
-										<div class="col-auto"> <span class="text-light">08.05.20</span></div>
-										<div class="col"><span class="text-light">Рубрика:
-												<a class="newsItem__rubric" href="#">Правильное питание
-												</a></span></div>
-									</div>
-									<p>Все мы задумываемся о своем питании, о том что и как мы едим. В этой статье мы разберем, что нужно сделать, чтобы ваше питание стало правильным</p>
-									<a class="newsItem__btn btn btn-primary" href="#">Читать полностью
-									</a>
-								</div>
-								<div class="newsItem"> 
-									<div class="newsItem__imgWrap"> 
-										<!-- picture-->
-										<picture> 
-											<source type="image/webp" srcset="img/@2x/webp/thumb-article-570x570-517a.webp"/><img src="img/@2x/thumb-article-570x570-517a.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
-									</div>
-									<div class="newsItem__title">Рецепт изумительного плова. Красиво, вкусно и полезно
-									</div>
-									<div class="newsItem__row row"> 
-										<div class="col-auto"> <span class="text-light">19.08.21</span></div>
-										<div class="col"><span class="text-light">Рубрика:
-												<a class="newsItem__rubric" href="#">Правильное питание
-												</a></span></div>
-									</div>
-									<p>Не знаете чем побаловать родных на обед? Плов с шампиньонами и мясом, в основе которого смесь красного, черного и нешлифованного риса - это невероятно красиво и вкусно</p>
-									<a class="newsItem__btn btn btn-primary" href="#">Читать полностью
-									</a>
-								</div>
-								<div class="newsItem"> 
-									<div class="newsItem__imgWrap"> 
-										<!-- picture-->
-										<picture> 
-											<source type="image/webp" srcset="img/@2x/webp/thumb-article-560x419-71c7.webp"/><img src="img/@2x/thumb-article-560x419-71c7.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
-									</div>
-									<div class="newsItem__title">Простой рецепт известного салата "Табуле". Ярко, вкусно и полезно
-									</div>
-									<div class="newsItem__row row"> 
-										<div class="col-auto"> <span class="text-light">12.08.21</span></div>
-										<div class="col"><span class="text-light">Рубрика:
-												<a class="newsItem__rubric" href="#">Правильное питание
-												</a></span></div>
-									</div>
-									<p>Как приготовить идеальный летний салат "Табуле"? Сегодня мы расскажем все секреты приготовления</p>
-									<a class="newsItem__btn btn btn-primary" href="#">Читать полностью
-									</a>
-								</div>
-								<div class="newsItem"> 
-									<div class="newsItem__imgWrap"> 
-										<!-- picture-->
-										<picture> 
-											<source type="image/webp" srcset="img/@2x/webp/thumb-article-560x748-4024.webp"/><img src="img/@2x/thumb-article-560x748-4024.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
-									</div>
-									<div class="newsItem__title">Ватрушка с ягодами - невозможно оторваться
-									</div>
-									<div class="newsItem__row row"> 
-										<div class="col-auto"> <span class="text-light">05.08.21</span></div>
-										<div class="col"><span class="text-light">Рубрика:
-												<a class="newsItem__rubric" href="#">Правильное питание
-												</a></span></div>
-									</div>
-									<p>Простой рецепт ватрушки на творожном тесте. Просто и нереально вкусно, идеальный перекус к чаю</p>
-									<a class="newsItem__btn btn btn-primary" href="#">Читать полностью
-									</a>
-								</div>
-								<div class="newsItem"> 
-									<div class="newsItem__imgWrap"> 
-										<!-- picture-->
-										<picture> 
-											<source type="image/webp" srcset="img/@2x/webp/thumb-article-560x749-9e82.webp"/><img src="img/@2x/thumb-article-560x749-9e82.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
-									</div>
-									<div class="newsItem__title">Родные будут в восторге. Рецепт фаршированных баклажанов
-									</div>
-									<div class="newsItem__row row"> 
-										<div class="col-auto"> <span class="text-light">29.07.21</span></div>
-										<div class="col"><span class="text-light">Рубрика:
-												<a class="newsItem__rubric" href="#">Правильное питание
-												</a></span></div>
-									</div>
-									<p>Фаршированные баклажаны с булгуром придутся по вкусу каждому, даже самого привередливому гурману</p>
-									<a class="newsItem__btn btn btn-primary" href="#">Читать полностью
-									</a>
-								</div>
-								<div class="newsItem"> 
-									<div class="newsItem__imgWrap"> 
-										<!-- picture-->
-										<picture> 
-											<source type="image/webp" srcset="img/@2x/webp/thumb-article-570x570-a68b.webp"/><img src="img/@2x/thumb-article-570x570-a68b.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
-									</div>
-									<div class="newsItem__title">Яркий вариант завтрака! Рецепт на который вы потратите всего 5 минут
-									</div>
-									<div class="newsItem__row row"> 
-										<div class="col-auto"> <span class="text-light">22.07.21</span></div>
-										<div class="col"><span class="text-light">Рубрика:
-												<a class="newsItem__rubric" href="#">Правильное питание
-												</a></span></div>
-									</div>
-									<p>Быстрый и простой рецепт. Полезно и самое главное - невероятно вкусно!</p>
-									<a class="newsItem__btn btn btn-primary" href="#">Читать полностью
-									</a>
-								</div>
-								<div class="newsItem"> 
-									<div class="newsItem__imgWrap"> 
-										<!-- picture-->
-										<picture> 
-											<source type="image/webp" srcset="img/@2x/webp/thumb-article-560x748-590b.webp"/><img src="img/@2x/thumb-article-560x748-590b.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
-									</div>
-									<div class="newsItem__title">Рецепт чечевицеблина. Это фантастика. Вкусно и просто
-									</div>
-									<div class="newsItem__row row"> 
-										<div class="col-auto"> <span class="text-light">01.07.21</span></div>
-										<div class="col"><span class="text-light">Рубрика:
-												<a class="newsItem__rubric" href="#">Правильное питание
-												</a></span></div>
-									</div>
-									<p>Завтрак, непременно, должен быть сытным, полезный и, безусловно, вкусным. Интересно? Тогда переходите и начните свой день вкусно</p>
-									<a class="newsItem__btn btn btn-primary" href="#">Читать полностью
-									</a>
-								</div>
-								<div class="newsItem"> 
-									<div class="newsItem__imgWrap"> 
-										<!-- picture-->
-										<picture> 
-											<source type="image/webp" srcset="img/@2x/webp/thumb-article-560x747-7c8c.webp"/><img src="img/@2x/thumb-article-560x747-7c8c.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
-									</div>
-									<div class="newsItem__title">Яркий, вкусный и невероятно ароматный кокосовый трайфл с клубникой
-									</div>
-									<div class="newsItem__row row"> 
-										<div class="col-auto"> <span class="text-light">24.06.21</span></div>
-										<div class="col"><span class="text-light">Рубрика:
-												<a class="newsItem__rubric" href="#">Правильное питание
-												</a></span></div>
-									</div>
-									<p>Все еще думаете что приготовить на завтрак? Предлагаем простой рецепт яркого и полезного десерта. Невероятно вкусно и просто</p>
-									<a class="newsItem__btn btn btn-primary" href="#">Читать полностью
-									</a>
-								</div>
-								<div class="newsItem"> 
-									<div class="newsItem__imgWrap"> 
-										<!-- picture-->
-										<picture> 
-											<source type="image/webp" srcset="img/@2x/webp/thumb-article-560x560-a2e5.webp"/><img src="img/@2x/thumb-article-560x560-a2e5.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
-									</div>
-									<div class="newsItem__title">Мега вкусное и ароматное миндальное печенье
-									</div>
-									<div class="newsItem__row row"> 
-										<div class="col-auto"> <span class="text-light">11.06.21</span></div>
-										<div class="col"><span class="text-light">Рубрика:
-												<a class="newsItem__rubric" href="#">Правильное питание
-												</a></span></div>
-									</div>
-									<p>Мы решили открыть рецепт невероятно вкусного и полезного перекуса. Простой способ приготовления, а результат просто "ОГОНЬ"</p>
-									<a class="newsItem__btn btn btn-primary" href="#">Читать полностью
-									</a>
-								</div>
-							</div>
-							<div class="pagination-wrapper">
-								<ul class="page-numbers">
-											<li><span class="prev page-numbers">
-													<svg class="icon icon-caret-left ">
-														<use xlink:href="img/svg/sprite.svg#caret-left"></use>
-													</svg><span>Назад</span></span>
-											</li>
-											<li><span class="page-numbers current"> 1</span>
-											</li>
-											<li><a class="page-numbers" href="#">2</a>
-											</li>
-											<li><a class="page-numbers" href="#">3</a>
-											</li>
-											<li><a class="page-numbers" href="#">4</a>
-											</li>
-											<li><a class="next page-numbers" href="#"> <span>Вперед</span>
-													<svg class="icon icon-caret-right ">
-														<use xlink:href="img/svg/sprite.svg#caret-right"></use>
-													</svg></a>
-											</li>
-								</ul>
-							</div>
-						</div>
+						<div class="col-auto"> </div>
+						<div class="col"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.4258865494485!2d36.278859115987856!3d49.984624328700264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09e30c56349%3A0x60c3d42beddb9a64!2z0L3QsNCxLiDQodCw0LHRg9GA0L7QstGB0LrQsNGPLCAzLCDQpdCw0YDRjNC60L7Qsiwg0KXQsNGA0YzQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjEwMDA!5e0!3m2!1sru!2sua!4v1631691038061!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
 					</div>
 				</div>
 			</section>
-			<!-- end sNutrition-->
+			<!-- end sContact-->
 			<footer class="footer">
 				<div class="footer__head">
 					<div class="container">

@@ -4,6 +4,13 @@
 	--sPB: #{rem(5)};
 	background-color: $secondary;
 
+	@include media-breakpoint-down(lg) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
 	.row {
 		@include media-breakpoint-only(lg) {
 			@include roww(10px);

@@ -1,0 +1,37 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sNewItem/_sNewItem.pug
+include ../blocks/sProjects/_sProjects.pug
+include ../blocks/sitebar/_sitebar.pug
+include ../blocks/sProdCard/_sProdCard.pug
+
+block variables
+	- let  mainPage= null
+	- let  bg= null
+
+block title
+	- let  title= 'Смесь для выпечки "Жаворонки", 0,278 кг'
+	title= title
+block pagecontent 
+
+	+mob-mnu()
+	+header()
+		+topLine()
+		+top-nav()
+	+b.pageHead
+		.container 
+			+breadcrumb('Главная','Каталог','Готовые смеси для выпечки')
+	.container 
+		.row 
+			.col-lg-3 
+				+sitebar()
+			.col
+				+sProdCard()
+	+footer()
+      
+
+
+
