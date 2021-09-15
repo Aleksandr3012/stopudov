@@ -339,7 +339,7 @@ function eventHandler() {
 		$(this).parent().toggleClass('active').find('.drop-accardion-toggle-js').toggleClass('active');
 	});
 	$('.sitebarAccardionToggle--js').on('click', function () {
-		$(this).toggleClass('active').parents('.accardionContainer--js').find('.sitebarAccardionHidden--js').slideToggle('active');
+		$(this).toggleClass('active').parents('.accardionContainer--js').find('.sitebarAccardionHidden--js').slideToggle();
 	});
 	$('.sitebar__btn--js').on('click', function () {
 		$(this).parent().find('.sitebar__inner--js').slideToggle();
