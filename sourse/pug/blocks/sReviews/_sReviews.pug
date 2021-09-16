@@ -1,0 +1,55 @@
+mixin sReviews(data)
+	// start sReviews
+	+b.SECTION.sReviews.section#sReviews&attributes(attributes)
+		.container.container--small
+			+e.header
+				+e.amount
+					p Отзывы
+					span 7
+				+e.A.feedb-btn.scroll-link(href="#feedbackForm") Оставить отзыв
+			+e.items
+				+feedBackItem('Софья Сергеевна Чобанян', 4)
+				+feedBackItem('Константин', 2)
+				+feedBackItem('Елизавета', 4)
+				+feedBackItem('Софья Сергеевна Чобанян', 4)
+				+feedBackItem('Георгий Новиков', 5)
+				+feedBackItem('Софья Сергеевна Чобанян', 1)
+				+feedBackItem('Степан', 4)
+			+e.form#feedbackForm
+				+form-wrap
+					+e.stars-cont
+						+e.stars-title Оставить отзыв
+						+e.stars
+							- for (let i=0; i < 5; i++)
+								+e.star.star-js
+									input(type='radio' name='star-mark')
+									+icon('star')
+					+e.inputs-block
+						+input('Ваше имя','text')
+						+input('Ваш e-mail','email')
+						+input('Отзыв','textarea', undefined, 'message')
+					+e.btn-cont
+						+e.BUTTON.btn(type='submit') Оставить отзыв
+						+e.after-btn Гарантируем конфидециальность ваших данных
+
+	// end sReviews
+
+mixin feedBackItem(name, starsNum)
+	+e.item
+		+e.item-data
+			+e.name=name
+			+e.date
+				span 24.07.20
+			+stars(starsNum)
+		+e.item-txt
+			p Купил жене 11 Pro Max 512 Гб. Честно говоря кроме огромной памяти и цены, у этого аппарата практически нет существенных отличий от версий 7; 8 и т.п. Может в процессе эксплуатации что прояснится, но пока - ничего существенного.
+
+mixin stars(num)
+	+e.stars-cont
+		- for (let i = 1; i <=5; i++)
+			if i <= num
+				+e.star.filled-star
+					+icon('star')
+			else
+				+e.star.empty-star
+					+icon('star')

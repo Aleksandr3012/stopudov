@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Отзывы</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
+		<link href="libs/swiper/swiper.min.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/ui/fancybox.css" rel="stylesheet"/>
+		<link href="css/main.min.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div class="main-wrapper">
+			<div class="menu-mobile menu-mobile--js d-lg-none">
+				<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+				</div>
+				<div class="menu-mobile__inner">
+					<div class="menu-mobile__wrap d-sm-none">
+						<div class="search">
+							<form>
+								<div class="search__input-wrap form-group"><input class="search__input form-control" name="search" type="search" placeholder="Поиск по товарам"/>
+								</div>
+								<!-- +e.input-wrap-->
+								<button class="search__btn" type="submit">
+									<svg class="icon icon-search ">
+										<use xlink:href="img/svg/sprite.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+						</div>
+					</div>
+					<ul class="menu menu--left" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+						<li class="menu-item menu-item-has-children accardionContainer--js">
+							<div class="menu__catalog"><a href="#" itemprop="url">Каталог</a>
+								<div class="sitebarAccardionToggle sitebarAccardionToggle--js">
+									<svg class="icon icon-chevron-down ">
+										<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="menu__wrap sitebarAccardionHidden sitebarAccardionHidden--js">
+								<div class="row"> 
+									<div class="col"><span class="menu__head">Продукция</span>
+										<ul class="sub-menu">
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Готовые смеси для выпечки</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Блюда удобного приготовления</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Правильное питание</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Крупы</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Бобовые</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Мука, крахмал, панировочные сухари</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Наборы для приготовления</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Продукты в офис и в дорогу</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Макаронные изделия</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Сахар, соль, сода</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Сухофрукты,орехи</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Кондитерское сырьё, халва, чай</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Молочные продукты</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Мясные консервы</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Растительное масло</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">HoReCa</a></li>
+										</ul>
+									</div>
+									<div class="col menu__col"><span class="menu__head">Линейки круп</span>
+										<ul class="menu__rList"> 
+											<li class="menu__colorItem"><a href="#" itemprop="url" style="--item-color:#D6392B">Традиционная</a></li>
+											<li class="menu__colorItem"><a href="#" itemprop="url" style="--item-color:#6E3EB0">Премиум</a></li>
+											<li class="menu__colorItem"><a href="#" itemprop="url" style="--item-color:#11C8D1">Мини</a></li>
+											<li class="menu__colorItem"><a href="#" itemprop="url" style="--item-color:#D6392B">Дачка</a></li>
+											<li class="menu__colorItem"><a href="#" itemprop="url" style="--item-color:#98D400">Эконом</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Где купить</a></li>
+						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">О ТМ “Сто Пудов”</a></li>
+					</ul>
+					<ul class="menu menu--right" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Новости</a></li>
+						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Стопудовое питание</a></li>
+						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
+					</ul>
+					<a class="menu-mobile__link" href="http://100pudov.in.ua/" target="_blank">Интернет-магазин
+					</a>
+					<div class="menu-mobile__wrap">
+						<div class="langBlock">
+							<div class="langBlock__item drop-accardion-js"> 
+								<div class="langBlock__activeLang">RU
+									<svg class="icon icon-sort-down ">
+										<use xlink:href="img/svg/sprite.svg#sort-down"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="langBlock__itemsHidden drop-accardion-toggle-js">
+								<a class="langBlock__link" href="#">UA
+								</a>
+								<a class="langBlock__link" href="#">EN
+								</a>
+							</div>
+						</div>
+						<div class="soc">
+							<a class="soc__item" href="https://www.facebook.com/100pudov" target="_blank">
+								<svg class="icon icon-fb ">
+									<use xlink:href="img/svg/sprite.svg#fb"></use>
+								</svg>
+							</a>
+							<a class="soc__item" href="https://www.youtube.com/channel/UC0DPRNDdDJAIYhvDIfY-4wg" target="_blank">
+								<svg class="icon icon-youtube ">
+									<use xlink:href="img/svg/sprite.svg#youtube"></use>
+								</svg>
+							</a>
+							<a class="soc__item" href="https://www.instagram.com/stopudov.ua" target="_blank">
+								<svg class="icon icon-instagram ">
+									<use xlink:href="img/svg/sprite.svg#instagram"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--  мобильное меню-->
+			<!-- start header-->
+			<header class="header" id="header">
+				<!-- start topLine-->
+				<div class="topLine section" id="topLine">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-auto d-lg-none">
+								<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+								</div>
+							</div>
+							<div class="col col-sm-auto d-lg-none">
+								<a class="topLine__logo" href="/"><img class="res-i" src="img/logo2.png" alt="Логотип"/>
+								</a>
+							</div>
+							<div class="col d-none d-lg-block">
+								<div class="row align-items-center">
+									<div class="col-auto col-lg"> 
+										<a class="topLine__link" href="http://100pudov.in.ua/" target="_blank">Интернет-магазин
+										</a>
+									</div>
+									<div class="col-auto">
+										<div class="soc">
+											<a class="soc__item" href="https://www.facebook.com/100pudov" target="_blank">
+												<svg class="icon icon-fb ">
+													<use xlink:href="img/svg/sprite.svg#fb"></use>
+												</svg>
+											</a>
+											<a class="soc__item" href="https://www.youtube.com/channel/UC0DPRNDdDJAIYhvDIfY-4wg" target="_blank">
+												<svg class="icon icon-youtube ">
+													<use xlink:href="img/svg/sprite.svg#youtube"></use>
+												</svg>
+											</a>
+											<a class="soc__item" href="https://www.instagram.com/stopudov.ua" target="_blank">
+												<svg class="icon icon-instagram ">
+													<use xlink:href="img/svg/sprite.svg#instagram"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="topLine__col col-auto d-none d-lg-block">
+							</div>
+							<div class="col-auto col-sm">
+								<div class="row align-items-center">
+									<div class="col-auto d-none d-lg-block">
+										<a class="topLine__tel" href="tel:0800501766">
+											<svg class="icon icon-phone ">
+												<use xlink:href="img/svg/sprite.svg#phone"></use>
+											</svg>0 800 501 766
+										</a>
+									</div>
+									<div class="col d-none d-sm-block">
+										<div class="search">
+											<form>
+												<div class="search__input-wrap form-group"><input class="search__input form-control" name="search" type="search" placeholder="Поиск по товарам"/>
+												</div>
+												<!-- +e.input-wrap-->
+												<button class="search__btn" type="submit">
+													<svg class="icon icon-search ">
+														<use xlink:href="img/svg/sprite.svg#search"></use>
+													</svg>
+												</button>
+											</form>
+										</div>
+									</div>
+									<div class="col-auto d-lg-none">
+										<a class="topLine__catalog" href="#">Каталог
+										</a>
+									</div>
+									<div class="col-auto d-none d-lg-block">
+										<div class="langBlock">
+											<div class="langBlock__item drop-accardion-js"> 
+												<div class="langBlock__activeLang">RU
+													<svg class="icon icon-sort-down ">
+														<use xlink:href="img/svg/sprite.svg#sort-down"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="langBlock__itemsHidden drop-accardion-toggle-js">
+												<a class="langBlock__link" href="#">UA
+												</a>
+												<a class="langBlock__link" href="#">EN
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end topLine-->
+				<!-- start top-nav-->
+				<div class="top-nav block-with-lazy d-none d-lg-block">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col">
+								<ul class="menu menu--left" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+									<li class="menu-item menu-item-has-children accardionContainer--js">
+										<div class="menu__catalog"><a href="#" itemprop="url">Каталог</a>
+											<div class="sitebarAccardionToggle sitebarAccardionToggle--js">
+												<svg class="icon icon-chevron-down ">
+													<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="menu__wrap sitebarAccardionHidden sitebarAccardionHidden--js">
+											<div class="row"> 
+												<div class="col"><span class="menu__head">Продукция</span>
+													<ul class="sub-menu">
+														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Готовые смеси для выпечки</a></li>
+														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Блюда удобного приготовления</a></li>
+														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Правильное питание</a></li>
+														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Крупы</a></li>
+														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Бобовые</a></li>
+														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Мука, крахмал, панировочные сухари</a></li>
+														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Наборы для приготовления</a></li>
+														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Продукты в офис и в дорогу</a></li>
+														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Макаронные изделия</a></li>
+														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Сахар, соль, сода</a></li>
+														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Сухофрукты,орехи</a></li>
+														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Кондитерское сырьё, халва, чай</a></li>
+														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Молочные продукты</a></li>
+														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Мясные консервы</a></li>
+														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Растительное масло</a></li>
+														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">HoReCa</a></li>
+													</ul>
+												</div>
+												<div class="col menu__col"><span class="menu__head">Линейки круп</span>
+													<ul class="menu__rList"> 
+														<li class="menu__colorItem"><a href="#" itemprop="url" style="--item-color:#D6392B">Традиционная</a></li>
+														<li class="menu__colorItem"><a href="#" itemprop="url" style="--item-color:#6E3EB0">Премиум</a></li>
+														<li class="menu__colorItem"><a href="#" itemprop="url" style="--item-color:#11C8D1">Мини</a></li>
+														<li class="menu__colorItem"><a href="#" itemprop="url" style="--item-color:#D6392B">Дачка</a></li>
+														<li class="menu__colorItem"><a href="#" itemprop="url" style="--item-color:#98D400">Эконом</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Где купить</a></li>
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">О ТМ “Сто Пудов”</a></li>
+								</ul>
+							</div>
+							<div class="top-nav__col col-auto"> 
+								<a class="logo" href="/"><img class="logo__img logo__img--lg" src="img/logo.png" alt="Логотип"/><img class="logo__img logo__img--sm" src="img/logo-3.png" alt="Логотип"/>
+								</a>
+							</div>
+							<div class="col">
+								<ul class="menu menu--right" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Новости</a></li>
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Стопудовое питание</a></li>
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end top-nav-->
+			</header>
+			<!-- end header-->
+			<div class="pageHead">
+				<div class="container"> 
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+							<li class="breadcrumb-item" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span>
+									<meta itemprop="position" content="1"/></a></li>
+							<li class="breadcrumb-item active" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Отзывы</span>
+									<meta itemprop="position" content="2"/></a></li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+			<!-- start sReviews-->
+			<section class="sReviews section" id="sReviews">
+				<div class="container container--small">
+					<div class="sReviews__header">
+						<div class="sReviews__amount">
+							<p>Отзывы</p><span>7</span>
+						</div>
+						<a class="sReviews__feedb-btn scroll-link" href="#feedbackForm">Оставить отзыв
+						</a>
+					</div>
+					<div class="sReviews__items">
+						<div class="sReviews__item">
+							<div class="sReviews__item-data">
+								<div class="sReviews__name">Софья Сергеевна Чобанян
+								</div>
+								<div class="sReviews__date"><span>24.07.20</span>
+								</div>
+								<div class="sReviews__stars-cont">
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star empty-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="sReviews__item-txt">
+								<p>Купил жене 11 Pro Max 512 Гб. Честно говоря кроме огромной памяти и цены, у этого аппарата практически нет существенных отличий от версий 7; 8 и т.п. Может в процессе эксплуатации что прояснится, но пока - ничего существенного.</p>
+							</div>
+						</div>
+						<div class="sReviews__item">
+							<div class="sReviews__item-data">
+								<div class="sReviews__name">Константин
+								</div>
+								<div class="sReviews__date"><span>24.07.20</span>
+								</div>
+								<div class="sReviews__stars-cont">
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star empty-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star empty-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star empty-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="sReviews__item-txt">
+								<p>Купил жене 11 Pro Max 512 Гб. Честно говоря кроме огромной памяти и цены, у этого аппарата практически нет существенных отличий от версий 7; 8 и т.п. Может в процессе эксплуатации что прояснится, но пока - ничего существенного.</p>
+							</div>
+						</div>
+						<div class="sReviews__item">
+							<div class="sReviews__item-data">
+								<div class="sReviews__name">Елизавета
+								</div>
+								<div class="sReviews__date"><span>24.07.20</span>
+								</div>
+								<div class="sReviews__stars-cont">
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star empty-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="sReviews__item-txt">
+								<p>Купил жене 11 Pro Max 512 Гб. Честно говоря кроме огромной памяти и цены, у этого аппарата практически нет существенных отличий от версий 7; 8 и т.п. Может в процессе эксплуатации что прояснится, но пока - ничего существенного.</p>
+							</div>
+						</div>
+						<div class="sReviews__item">
+							<div class="sReviews__item-data">
+								<div class="sReviews__name">Софья Сергеевна Чобанян
+								</div>
+								<div class="sReviews__date"><span>24.07.20</span>
+								</div>
+								<div class="sReviews__stars-cont">
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star empty-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="sReviews__item-txt">
+								<p>Купил жене 11 Pro Max 512 Гб. Честно говоря кроме огромной памяти и цены, у этого аппарата практически нет существенных отличий от версий 7; 8 и т.п. Может в процессе эксплуатации что прояснится, но пока - ничего существенного.</p>
+							</div>
+						</div>
+						<div class="sReviews__item">
+							<div class="sReviews__item-data">
+								<div class="sReviews__name">Георгий Новиков
+								</div>
+								<div class="sReviews__date"><span>24.07.20</span>
+								</div>
+								<div class="sReviews__stars-cont">
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="sReviews__item-txt">
+								<p>Купил жене 11 Pro Max 512 Гб. Честно говоря кроме огромной памяти и цены, у этого аппарата практически нет существенных отличий от версий 7; 8 и т.п. Может в процессе эксплуатации что прояснится, но пока - ничего существенного.</p>
+							</div>
+						</div>
+						<div class="sReviews__item">
+							<div class="sReviews__item-data">
+								<div class="sReviews__name">Софья Сергеевна Чобанян
+								</div>
+								<div class="sReviews__date"><span>24.07.20</span>
+								</div>
+								<div class="sReviews__stars-cont">
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star empty-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star empty-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star empty-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star empty-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="sReviews__item-txt">
+								<p>Купил жене 11 Pro Max 512 Гб. Честно говоря кроме огромной памяти и цены, у этого аппарата практически нет существенных отличий от версий 7; 8 и т.п. Может в процессе эксплуатации что прояснится, но пока - ничего существенного.</p>
+							</div>
+						</div>
+						<div class="sReviews__item">
+							<div class="sReviews__item-data">
+								<div class="sReviews__name">Степан
+								</div>
+								<div class="sReviews__date"><span>24.07.20</span>
+								</div>
+								<div class="sReviews__stars-cont">
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star filled-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="sReviews__star empty-star">
+										<svg class="icon icon-star ">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="sReviews__item-txt">
+								<p>Купил жене 11 Pro Max 512 Гб. Честно говоря кроме огромной памяти и цены, у этого аппарата практически нет существенных отличий от версий 7; 8 и т.п. Может в процессе эксплуатации что прояснится, но пока - ничего существенного.</p>
+							</div>
+						</div>
+					</div>
+					<div class="sReviews__form" id="feedbackForm">
+						<div class="form-wrap">
+							<form>
+								<div class="form-wrap__stars-cont">
+									<div class="form-wrap__stars-title">Оставить отзыв
+									</div>
+									<div class="form-wrap__stars">
+										<div class="form-wrap__star star-js">
+											<input type="radio" name="star-mark"/>
+											<svg class="icon icon-star ">
+												<use xlink:href="img/svg/sprite.svg#star"></use>
+											</svg>
+										</div>
+										<div class="form-wrap__star star-js">
+											<input type="radio" name="star-mark"/>
+											<svg class="icon icon-star ">
+												<use xlink:href="img/svg/sprite.svg#star"></use>
+											</svg>
+										</div>
+										<div class="form-wrap__star star-js">
+											<input type="radio" name="star-mark"/>
+											<svg class="icon icon-star ">
+												<use xlink:href="img/svg/sprite.svg#star"></use>
+											</svg>
+										</div>
+										<div class="form-wrap__star star-js">
+											<input type="radio" name="star-mark"/>
+											<svg class="icon icon-star ">
+												<use xlink:href="img/svg/sprite.svg#star"></use>
+											</svg>
+										</div>
+										<div class="form-wrap__star star-js">
+											<input type="radio" name="star-mark"/>
+											<svg class="icon icon-star ">
+												<use xlink:href="img/svg/sprite.svg#star"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="form-wrap__inputs-block">
+									<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="text" type="text" placeholder="Ваше имя"/>
+									</div>
+									<!-- +e.input-wrap-->
+									<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="email" type="email" placeholder="Ваш e-mail"/>
+									</div>
+									<!-- +e.input-wrap-->
+									<div class="form-wrap__input-wrap form-group"><textarea class="form-wrap__input form-control" name="message" placeholder="Отзыв"></textarea>
+									</div>
+									<!-- +e.input-wrap-->
+								</div>
+								<div class="form-wrap__btn-cont">
+									<button class="form-wrap__btn" type="submit">Оставить отзыв
+									</button>
+									<div class="form-wrap__after-btn">Гарантируем конфидециальность ваших данных
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sReviews-->
+			<footer class="footer">
+				<div class="footer__head">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="footer__col col-lg">
+								<div class="footer__site">Наши корпоративные сайты:
+								</div>
+								<ul class="footer__siteList">
+									<li><a href="#" target="_blank">Вариатор</a></li>
+									<li><a href="#" target="_blank">Огонек</a></li>
+									<li><a href="#" target="_blank">Вершок</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-auto">
+								<a class="footer__btn btn" href="#">Оставить отзыв
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__foot"> 
+					<div class="container"> 
+						<div class="row"> 
+							<div class="col col-lg-auto">
+								<div class="footer__copyright">©<span class="currentYear"></span>“Сто пудів тм”
+								</div>
+							</div>
+							<div class="col d-none d-lg-block">
+								<div class="soc">
+									<a class="soc__item" href="https://www.facebook.com/100pudov" target="_blank">
+										<svg class="icon icon-fb ">
+											<use xlink:href="img/svg/sprite.svg#fb"></use>
+										</svg>
+									</a>
+									<a class="soc__item" href="https://www.youtube.com/channel/UC0DPRNDdDJAIYhvDIfY-4wg" target="_blank">
+										<svg class="icon icon-youtube ">
+											<use xlink:href="img/svg/sprite.svg#youtube"></use>
+										</svg>
+									</a>
+									<a class="soc__item" href="https://www.instagram.com/stopudov.ua" target="_blank">
+										<svg class="icon icon-instagram ">
+											<use xlink:href="img/svg/sprite.svg#instagram"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="col-auto">
+								<a class="footer__dev" href="#">Разработка сайта wu.ua
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!--  start modals-->
+		<div class="modal-win" id="modal-call" style="display: none">
+			<div class="form-wrap">
+				<form>
+					<div class="text-center">
+						<div class="form-wrap__title form-data h3 ttu">Обратный звонок
+						</div>
+						<p class="after-headline">Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течение 15&nbsp;минут</p>
+					</div>
+					<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="text" type="text" placeholder="Ваше Имя" required="required"/> 
+					</div>
+					<!-- +e.input-wrap-->
+					<button class="form-wrap__btn btn" type="submit"> 
+					</button>
+					<div class="p-5"></div>
+					<div class="p-5"></div>
+					<div class="p-5"></div>
+					<div class="p-5"></div>
+					<div class="p-5"></div>
+					<div class="form-wrap__policy">
+						<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
+						</label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- #modal-call-->
+		<!-- end modals-->
+		<!-- modal libs-->
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox.umd.js"></script>
+		<!-- modal libs-->
+		<!-- slider libs-->
+		<script src="libs/swiper/swiper-bundle.min.js"> </script>
+		<!-- /slider libs-->
+		<script src="libs/inputmask/inputmask.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

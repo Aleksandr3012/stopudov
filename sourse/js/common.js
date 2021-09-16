@@ -369,7 +369,48 @@ function eventHandler() {
 			prevEl: ".headerBlock .swiper-button-prev",
 		},
 	});
-	// modal window
+
+	//stars
+
+	$('.star-js').click(function () {
+		var thisIndex = $('.star-js').index(this);
+		var allThis = this.parentElement.children;
+		$(this).children('[name="rating"]').prop('checked', true);
+		for (var i = 0; i <= thisIndex; i++) {
+			allThis[i].classList.add('active');
+		}
+		for (var _i = thisIndex + 1; _i <= allThis.length - 1; _i++) {
+			allThis[_i].classList.remove('active');
+		}
+	});
+
+	$('.star-js').mouseover(function () {
+		var thisIndex = $('.star-js').index(this);
+		var allThis = this.parentElement.children;
+		for (var i = 0; i <= thisIndex; i++) {
+			allThis[i].classList.add('hover-paint-js');
+		}
+		for (var _i2 = thisIndex + 1; _i2 <= allThis.length - 1; _i2++) {
+			allThis[_i2].classList.remove('hover-paint-js');
+		}
+	});
+	$('.star-js').mouseout(function () {
+		var allThis = this.parentElement.children;
+		var _iterator = _createForOfIteratorHelper(allThis),
+			_step;
+
+		try {
+			for (_iterator.s(); !(_step = _iterator.n()).done;) {
+				var star = _step.value;
+				star.classList.remove('hover-paint-js');
+			}
+		} catch (err) {
+			_iterator.e(err);
+		} finally {
+			_iterator.f();
+		}
+	});
+
 
 };
 if (document.readyState !== 'loading') {

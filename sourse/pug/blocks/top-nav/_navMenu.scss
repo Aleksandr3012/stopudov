@@ -164,8 +164,12 @@
 		list-style: none;
 
 		a {
+			border: none !important;
 			text-align: center !important;
-			padding: rem(5px) rem(10px);
+			padding: rem(5px);
+			@include media-breakpoint-up(lg) {
+				padding: rem(5px) rem(10px);
+			}
 		}
 	}
 
