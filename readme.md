@@ -4,6 +4,6 @@
 1. <https://aleksandr3012.github.io/stopudov/public/04-gde-kupit.html>
 1. <https://aleksandr3012.github.io/stopudov/public/05-news.html>
 1. <https://aleksandr3012.github.io/stopudov/public/06-stopudovoye-pitaniye.html>
-<!-- 1. <https://aleksandr3012.github.io/stopudov/public/07-contacts.html> -->
+1. <https://aleksandr3012.github.io/stopudov/public/07-contacts.html>
 1. <https://aleksandr3012.github.io/stopudov/public/08-prodCard.html>
 1. <https://aleksandr3012.github.io/stopudov/public/09-otzyvy.html>

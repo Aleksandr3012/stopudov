@@ -239,10 +239,6 @@
 				textarea{
 					height: 120px;
 				}
-
-				textarea, input {
-					background: $light;
-				}
 			}
 			&__inputs-block{
 				padding-bottom: rem(44);
@@ -252,8 +248,10 @@
 			}
 			&__input{
 				border-radius: 4px;
-
 				padding: 12px 21px;
+				color: #fff;
+				background: #4f5259;
+
 			}
 			&__btn-cont{
 				@include media-breakpoint-up(sm){
