@@ -166,6 +166,7 @@
 		a {
 			border: none !important;
 			text-align: center !important;
+			color: #fff !important;
 			padding: rem(5px);
 			@include media-breakpoint-up(lg) {
 				padding: rem(5px) rem(10px);
