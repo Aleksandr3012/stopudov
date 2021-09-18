@@ -7,7 +7,8 @@
 		--top-nav-height: #{rem(90)};
 	}
 	@include media-breakpoint-up(xl) {
-		--top-nav-height: #{rem(100)};
+		// --top-nav-height: #{rem(100)};
+		--top-nav-height: #{rem(83)};
 	}
 	@include media-breakpoint-up(md) {
 

@@ -1,7 +1,9 @@
 // start .topLine
 .topLine {
-	--sPT: #{rem(5)};
-	--sPB: #{rem(5)};
+	// --sPT: #{rem(5)};
+	// --sPB: #{rem(5)};
+	--sPT: #{rem(13)};
+	--sPB: #{rem(13)};
 	background-color: $secondary;
 
 	@include media-breakpoint-down(lg) {

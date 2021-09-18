@@ -8,7 +8,8 @@
 	width: 100%;
 	background: #fff;
 	@include mt;
-	padding-top: rem(17);
+	padding-top: 0;
+	// padding-top: rem(17);
 	padding-bottom: rem(17);
 
 
@@ -58,9 +59,9 @@
 	@include a-cent(x);
 	transition: none;
 	z-index: 5;
-	top: -78px;
+	top: -94px;
 	border-radius: 50%;
-	background-color: #fff;
+	// background-color: #fff;
 	width: 155px;
 	height: 153px;
 	box-shadow: rgba(0, 0, 0, 0.11) 0px 20px 20px -17px;

@@ -370,6 +370,26 @@ function eventHandler() {
 		},
 	});
 
+	const sReviewsSlider = new Swiper('.sReviews__slider--js', {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		breakpoints: {
+			992: {
+				slidesPerView: 2,
+			},
+		},
+		loop: true,
+		navigation: {
+			nextEl: ".sReviews .swiper-button-next",
+			prevEl: ".sReviews .swiper-button-prev",
+		},
+		pagination: {
+			el: '.sReviews .swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+	});
+
 	//stars
 
 	$('.star-js').click(function () {

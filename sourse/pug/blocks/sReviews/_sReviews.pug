@@ -1,6 +1,6 @@
 mixin sReviews(data)
 	// start sReviews
-	+b.SECTION.sReviews.section#sReviews&attributes(attributes)
+	+b.sReviews.section#sReviews&attributes(attributes)
 		.container.container--small
 			+e.header
 				+e.amount
@@ -53,3 +53,30 @@ mixin stars(num)
 			else
 				+e.star.empty-star
 					+icon('star')
+
+
+mixin sReviewsSlider(data)
+	// start sReviews
+	+b.sReviews.section#sReviews&attributes(attributes)
+		.container 
+			+b.section-title
+				h2 Отзывы
+			+e.sliderWrap
+				+e.slider--js.swiper-container
+					.swiper-wrapper
+						.swiper-slide
+							+feedBackItem('Софья Сергеевна Чобанян', 4)
+						.swiper-slide
+							+feedBackItem('Константин', 2)
+						.swiper-slide
+							+feedBackItem('Елизавета', 4)
+						.swiper-slide
+							+feedBackItem('Софья Сергеевна Чобанян', 4)
+						.swiper-slide
+							+feedBackItem('Георгий Новиков', 5)
+						.swiper-slide
+							+feedBackItem('Софья Сергеевна Чобанян', 1)
+						.swiper-slide
+							+feedBackItem('Степан', 4)
+				+arrow
+				.swiper-pagination

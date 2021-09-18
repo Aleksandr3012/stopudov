@@ -305,7 +305,64 @@
 					opacity: 0.52;
 					margin-right: rem(26);
 				}
+			}
+		}
+	}
 
+	&__sliderWrap {
+		position: relative;
+	}
+
+	&__slider {
+		.sReviews__item-data {
+			@include media-breakpoint-only(lg) {
+				width: rem(150);
+			}
+		}
+
+		.sReviews__item {
+			height: calc(100% - 1.25rem);
+		}
+
+
+	}
+
+	&__sliderWrap {
+		@include media-breakpoint-down(lg) {
+			padding-bottom: rem(20);
+		}
+		.swiper-pagination {
+			@include media-breakpoint-up(lg) {
+				bottom: -10px;
+			}
+		}
+
+		.swiper-button-hand {
+			background: rgba($color: $light, $alpha: 0.6);
+			border-radius: 100% 100% 100% 100%;
+			--swiperArrowSize: #{rem(40)};
+			@include media-breakpoint-down(lg) {
+				display: none;
+			}
+
+			&:hover {
+				background: $light;
+			}
+
+			.icon {
+				font-size: rem(20);
+			}
+
+			&-prev {
+				@include media-breakpoint-up(md) {
+					left: -3vw;
+				}
+			}
+
+			&-next {
+				@include media-breakpoint-up(md) {
+					right: -3vw;
+				}
 			}
 		}
 	}
